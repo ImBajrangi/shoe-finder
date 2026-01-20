@@ -42,6 +42,7 @@ export function UnifiedControlBar({
 
   return (
     <div
+      className="control-bar-container"
       style={{
         position: "fixed",
         bottom: "40px",
@@ -60,6 +61,7 @@ export function UnifiedControlBar({
         - borderRadius: 32px is standard for pill shapes
       */}
       <motion.div
+        className="control-bar-island"
         layout
         transition={islandTransition}
         style={{
@@ -324,6 +326,31 @@ export function UnifiedControlBar({
           )}
         </AnimatePresence>
       </motion.div>
+
+      {/* Responsive scaling for shorter viewports (tablets) */}
+      <style>{`
+        @media (max-height: 800px) {
+          .control-bar-container {
+            bottom: 24px !important;
+          }
+          .control-bar-island {
+            height: 48px !important;
+            border-radius: 24px !important;
+            padding: 4px !important;
+            transform: scale(0.9);
+            transform-origin: bottom center;
+          }
+        }
+        @media (max-height: 650px) {
+          .control-bar-container {
+            bottom: 16px !important;
+          }
+          .control-bar-island {
+            height: 44px !important;
+            transform: scale(0.85);
+          }
+        }
+      `}</style>
     </div>
   );
 }
