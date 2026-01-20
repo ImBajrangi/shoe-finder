@@ -1,0 +1,1298 @@
+[
+  {
+    "title": "Nike Dunk Low 'Black White'",
+    "price": "$69",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/071/445/308/original/719082_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/dunk-low-black-white-dd1391-100",
+    "brand": "Nike",
+    "primary_color": "dark_gray",
+    "primary_color_hex": "#434344"
+  },
+  {
+    "title": "Travis Scott x Playstation x Nike Dunk Low",
+    "price": null,
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/045/408/663/original/TRAVIS_PS_DUNK.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/travis-scott-x-playstation-x-dunk-low-travis-ps-dunk",
+    "brand": "Nike",
+    "primary_color": "dark_gray",
+    "primary_color_hex": "#5b5451"
+  },
+  {
+    "title": "The Powerpuff Girls x Nike Dunk Low Pro SB QS PS 'Bubbles'",
+    "price": "$179",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/107/858/554/original/1252847_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/the-powerpuff-girls-x-dunk-low-pro-sb-qs-ps-bubbles-fz8833-400",
+    "brand": "Nike",
+    "primary_color": "yellow",
+    "primary_color_hex": "#d3b61b"
+  },
+  {
+    "title": "Concepts x Nike Dunk Low SB 'Orange Lobster'",
+    "price": "$307",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/081/467/358/original/1004215_00.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/concepts-x-dunk-low-sb-orange-lobster-bv1310-orange",
+    "brand": "Nike",
+    "primary_color": "orange",
+    "primary_color_hex": "#ec6f3f"
+  },
+  {
+    "title": "Undefeated x Nike Dunk Low 'Dunk vs AF1'",
+    "price": "$199",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/060/557/463/original/804800_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/undefeated-x-dunk-low-dunk-vs-af1-do9329-001",
+    "brand": "Nike",
+    "primary_color": "blue",
+    "primary_color_hex": "#2f3c5e"
+  },
+  {
+    "title": "Nike Dunk Low 'Grey Fog'",
+    "price": "$99",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/102/529/153/original/815560_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/dunk-low-grey-fog-dd1391-103",
+    "brand": "Nike",
+    "primary_color": "light_gray",
+    "primary_color_hex": "#bcbcbc"
+  },
+  {
+    "title": "Nike Dunk Low LTD 'Wizard'",
+    "price": "$82",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/114/086/048/original/1688165_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/nike-dunk-low-ltd-wizard-ib2267-001",
+    "brand": "Nike",
+    "primary_color": "purple",
+    "primary_color_hex": "#372946"
+  },
+  {
+    "title": "Stranger Things x Nike Dunk Low 'Phantom'",
+    "price": "$243",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/113/470/375/original/1632518_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/stranger-things-x-dunk-low-phantom-ih6766-001",
+    "brand": "Nike",
+    "primary_color": "orange",
+    "primary_color_hex": "#c4a484"
+  },
+  {
+    "title": "Nike Dunk Low SE 'Triple Black'",
+    "price": "$116",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/113/832/854/original/1673505_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/dunk-low-se-triple-black-ib6651-001",
+    "brand": "Nike",
+    "primary_color": "gray",
+    "primary_color_hex": "#707579"
+  },
+  {
+    "title": "Ben & Jerry's x Nike Dunk Low SB 'Chunky Dunky'",
+    "price": "$1,188",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/081/096/394/original/616017_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/ben-jerry-s-x-dunk-low-sb-chunky-dunky-cu3244-100",
+    "brand": "Nike",
+    "primary_color": "orange",
+    "primary_color_hex": "#fbb807"
+  },
+  {
+    "title": "Cactus Plant Flea Market x Nike Dunk Low 'Swamp Sponge Pack - Psychic Purple'",
+    "price": "$227",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/113/685/894/original/1559498_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/cactus-plant-flea-market-x-dunk-low-swamp-sponge-pack-psychic-purple-ih5094-500",
+    "brand": "Nike",
+    "primary_color": "orange",
+    "primary_color_hex": "#f4a105"
+  },
+  {
+    "title": "Nike Dunk Low 'Frankenstein'",
+    "price": "$109",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/113/991/412/original/1684073_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/nike-dunk-low-frankenstein-hv4452-300",
+    "brand": "Nike",
+    "primary_color": "orange",
+    "primary_color_hex": "#5b4f30"
+  },
+  {
+    "title": "Nike Dunk Low Pro SB 'Freddy Krueger'",
+    "price": "$25,059",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/105/442/626/original/23755_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/dunk-low-pro-sb-freddy-krueger-313170-202",
+    "brand": "Nike",
+    "primary_color": "orange",
+    "primary_color_hex": "#dcccae"
+  },
+  {
+    "title": "League of Legends x Nike Dunk Low",
+    "price": "$159",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/066/922/837/original/880640_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/league-of-legends-x-dunk-low-black-do2327-011",
+    "brand": "Nike",
+    "primary_color": "light_gray",
+    "primary_color_hex": "#acb8af"
+  },
+  {
+    "title": "Nike Dunk Low Premium 'Setsubun'",
+    "price": "$98",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/087/138/588/original/1008819_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/dunk-low-premium-setsubun-dq5009-268",
+    "brand": "Nike",
+    "primary_color": "orange",
+    "primary_color_hex": "#9c8566"
+  },
+  {
+    "title": "Futura Laboratories x Nike Dunk Low SB 'Bleached Aqua'",
+    "price": "$269",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/100/550/257/original/1359792_00.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/futura-laboratories-x-dunk-low-sb-bleached-aqua-hf6061-400",
+    "brand": "Nike",
+    "primary_color": "light_gray",
+    "primary_color_hex": "#bcbcc3"
+  },
+  {
+    "title": "Nike Dunk Low 'Athletic Department - Deep Jungle'",
+    "price": "$66",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/094/303/245/original/1243258_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/dunk-low-athletic-department-deep-jungle-fq8080-133",
+    "brand": "Nike",
+    "primary_color": "dark_gray",
+    "primary_color_hex": "#384243"
+  },
+  {
+    "title": "Nike Dunk Low 'Midnight Navy Smoke Grey'",
+    "price": "$103",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/085/295/026/original/1131128_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/dunk-low-midnight-navy-smoke-grey-fd9749-400",
+    "brand": "Nike",
+    "primary_color": "blue",
+    "primary_color_hex": "#31405e"
+  },
+  {
+    "title": "Nike Dunk Low GS 'Year of the Dragon'",
+    "price": "$99",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/097/333/986/original/1317918_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/dunk-low-gs-year-of-the-dragon-fz5528-101",
+    "brand": "Nike",
+    "primary_color": "red",
+    "primary_color_hex": "#c93d3b"
+  },
+  {
+    "title": "Nike Dunk Low 'Silver Surfer' 2024",
+    "price": "$39",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/103/683/267/original/1469450_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/dunk-low-silver-surfer-2024-hf0391-001",
+    "brand": "Nike",
+    "primary_color": "gray",
+    "primary_color_hex": "#808388"
+  },
+  {
+    "title": "Nike Dunk Low 'Year of the Snake'",
+    "price": "$143",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/107/369/957/original/1527026_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/dunk-low-year-of-the-snake-hv5980-231",
+    "brand": "Nike",
+    "primary_color": "gray",
+    "primary_color_hex": "#797d6e"
+  },
+  {
+    "title": "Nike Dunk Low 'Reverse Panda'",
+    "price": "$109",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/075/102/684/original/992773_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/dunk-low-reverse-panda-dj6188-101",
+    "brand": "Nike",
+    "primary_color": "gray",
+    "primary_color_hex": "#8a8888"
+  },
+  {
+    "title": "Off-White x Nike Rubber Dunk TD 'Green Strike'",
+    "price": "$145",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/043/964/800/original/689247_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/off-white-x-rubber-dunk-td-green-strike-ow-dunk-td-grn",
+    "brand": "Nike",
+    "primary_color": "green",
+    "primary_color_hex": "#7ae27e"
+  },
+  {
+    "title": "Nike Dunk Low Next Nature 'Baroque Brown'",
+    "price": "$138",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/099/868/051/original/1354550_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/dunk-low-next-nature-cacao-wow-hf4292-200",
+    "brand": "Nike",
+    "primary_color": "orange",
+    "primary_color_hex": "#d4ccbb"
+  },
+  {
+    "title": "The Powerpuff Girls x Nike Dunk Low Pro SB QS 'Buttercup'",
+    "price": "$274",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/095/942/929/original/1252845_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/the-powerpuff-girls-x-dunk-low-pro-sb-qs-buttercup-fz8319-300",
+    "brand": "Nike",
+    "primary_color": "green",
+    "primary_color_hex": "#6fa94b"
+  },
+  {
+    "title": "Nike Dunk Low ‘What the Duck - University of Oregon Alternate’ PE",
+    "price": "$300",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/105/454/031/original/1505861_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/dunk-low-what-the-phk-university-of-oregon-pe-hv1470-001",
+    "brand": "Nike",
+    "primary_color": "dark_gray",
+    "primary_color_hex": "#3a3c42"
+  },
+  {
+    "title": "Cactus Plant Flea Market x Nike Dunk Low 'Swamp Sponge Pack - Photo Blue'",
+    "price": "$249",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/113/470/259/original/1559553_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/cactus-plant-flea-market-x-dunk-low-swamp-sponge-pack-photo-blue-ih5094-400",
+    "brand": "Nike",
+    "primary_color": "blue",
+    "primary_color_hex": "#0472be"
+  },
+  {
+    "title": "Verdy x Nike Dunk Low SB 'Visty'",
+    "price": "$239",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/104/350/935/original/1384097_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/verdy-x-dunk-low-sb-visty-fn6040-400",
+    "brand": "Nike",
+    "primary_color": "green",
+    "primary_color_hex": "#bad1c5"
+  },
+  {
+    "title": "Nike Dunk Low 'Kentucky' 2025",
+    "price": "$105",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/111/759/451/original/1606471_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/dunk-low-kentucky-2025-hf5441-112",
+    "brand": "Nike",
+    "primary_color": "blue",
+    "primary_color_hex": "#043182"
+  },
+  {
+    "title": "Union LA x Nike Dunk Low 'Passport Pack - Argon'",
+    "price": "$165",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/066/733/592/original/860439_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/union-la-x-dunk-low-dj9649-400",
+    "brand": "Nike",
+    "primary_color": "blue",
+    "primary_color_hex": "#6e829a"
+  },
+  {
+    "title": "Nike Dunk Low 'Valerian Blue'",
+    "price": "$79",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/074/222/579/original/DD1391_400.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/dunk-low-usa-dd1391-400",
+    "brand": "Nike",
+    "primary_color": "blue",
+    "primary_color_hex": "#2c3d4c"
+  },
+  {
+    "title": "Nike Wmns Dunk Low 'Cacao Wow'",
+    "price": "$86",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/090/667/635/original/1221539_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/wmns-dunk-low-cacao-wow-dd1503-124",
+    "brand": "Nike",
+    "primary_color": "yellow",
+    "primary_color_hex": "#d4d4bc"
+  },
+  {
+    "title": "Limosine Skateboards x Nike Dunk Low SB 'Football'",
+    "price": "$87",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/113/899/957/original/1574413_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/limosine-skateboards-x-dunk-low-sb-basketball-leather-hj4131-200",
+    "brand": "Nike",
+    "primary_color": "red",
+    "primary_color_hex": "#371718"
+  },
+  {
+    "title": "Supreme x Nike Dunk Low SB 'Ocean Fog'",
+    "price": "$316",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/112/360/768/original/1492868_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/supreme-x-dunk-low-sb-ocean-fog-hq8487-400",
+    "brand": "Nike",
+    "primary_color": "blue",
+    "primary_color_hex": "#3c4c58"
+  },
+  {
+    "title": "Nike Dunk Low SB 'Sandy Bodecker'",
+    "price": "$142",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/082/412/265/original/1052251_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/ebay-x-dunk-low-sb-sandy-bodecker-fd8777-100",
+    "brand": "Nike",
+    "primary_color": "yellow",
+    "primary_color_hex": "#e6b211"
+  },
+  {
+    "title": "Jarritos x Nike Dunk Low SB",
+    "price": "$404",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/087/787/129/original/1092656_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/jarritos-x-dunk-low-sb-fd0860-001",
+    "brand": "Nike",
+    "primary_color": "teal",
+    "primary_color_hex": "#1f735d"
+  },
+  {
+    "title": "Undefeated x Air Jordan 4 Retro 2025",
+    "price": "$262",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/111/637/748/original/1581606_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/undefeated-x-air-jordan-4-retro-ib1519-200",
+    "brand": "Nike",
+    "primary_color": "yellow",
+    "primary_color_hex": "#838367"
+  },
+  {
+    "title": "Air Jordan 4 Retro 'Rare Air - White Lettering'",
+    "price": "$193",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/110/905/352/original/1481726_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/air-jordan-4-retro-rare-air-fv5029-003",
+    "brand": "Nike",
+    "primary_color": "blue",
+    "primary_color_hex": "#19346f"
+  },
+  {
+    "title": "Wmns Air Jordan 4 Retro TEX 'Worn Blue Denim'",
+    "price": "$153",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/111/406/797/original/1585244_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/wmns-air-jordan-4-retro-tex-worn-blue-denim-ib6716-100",
+    "brand": "Nike",
+    "primary_color": "blue",
+    "primary_color_hex": "#315472"
+  },
+  {
+    "title": "Air Jordan 4 Retro 'Black Cat' 2025",
+    "price": "$277",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/112/064/690/original/1567309_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/air-jordan-4-retro-black-cat-2025-fv5029-010",
+    "brand": "Nike",
+    "primary_color": "black",
+    "primary_color_hex": "#0c040b"
+  },
+  {
+    "title": "Air Jordan 4 Retro OG 'White Cement' 2025",
+    "price": "$232",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/108/196/609/original/1487425_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/air-jordan-4-retro-og-white-cement-2025-fv5029-100",
+    "brand": "Nike",
+    "primary_color": "gray",
+    "primary_color_hex": "#8a898b"
+  },
+  {
+    "title": "Nike SB x Air Jordan 4 Retro SP 'Navy'",
+    "price": "$166",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/108/196/560/original/1410752_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/nike-sb-x-air-jordan-4-retro-sp-navy-dr5415-100",
+    "brand": "Nike",
+    "primary_color": "orange",
+    "primary_color_hex": "#e3a97b"
+  },
+  {
+    "title": "Air Jordan 4 Retro 'Cave Stone'",
+    "price": "$179",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/112/025/806/original/1486672_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/air-jordan-4-retro-cave-stone-fq8138-200",
+    "brand": "Nike",
+    "primary_color": "dark_gray",
+    "primary_color_hex": "#4c443f"
+  },
+  {
+    "title": "Nigel Sylvester x Air Jordan 4 Retro OG SP 'Brick By Brick'",
+    "price": "$304",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/108/753/788/original/HF4340_800.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/air-jordan-4-retro-og-sp-firewood-orange-hf4340-800",
+    "brand": "Nike",
+    "primary_color": "red",
+    "primary_color_hex": "#c53f3b"
+  },
+  {
+    "title": "Jan 17",
+    "price": "$243",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/114/483/169/original/1707102_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/air-jordan-4-retro-flight-club-im4002-100",
+    "brand": "Nike",
+    "primary_color": "gray",
+    "primary_color_hex": "#858483"
+  },
+  {
+    "title": "Air Jordan 4 Retro 'White Thunder'",
+    "price": "$294",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/102/744/314/original/1333222_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/air-jordan-4-retro-white-thunder-fq8138-001",
+    "brand": "Nike",
+    "primary_color": "dark_gray",
+    "primary_color_hex": "#414143"
+  },
+  {
+    "title": "Air Jordan 4 Retro 'Bred Reimagined'",
+    "price": "$244",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/097/769/093/original/1293064_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/air-jordan-4-retro-bred-reimagined-fv5029-006",
+    "brand": "Nike",
+    "primary_color": "light_gray",
+    "primary_color_hex": "#b4b3bb"
+  },
+  {
+    "title": "Air Jordan 4 Retro 'Military Blue' 2024",
+    "price": "$214",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/099/440/967/original/1253639_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/air-jordan-4-retro-military-blue-2024-fv5029-141",
+    "brand": "Nike",
+    "primary_color": "light_gray",
+    "primary_color_hex": "#bcbebf"
+  },
+  {
+    "title": "Air Jordan 4 Retro GS 'Black Cat' 2025",
+    "price": "$158",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/113/832/980/original/1686179_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/air-jordan-jordan-4-retro-gs-black-cat-2025-ib4171-010",
+    "brand": "Nike",
+    "primary_color": "dark_gray",
+    "primary_color_hex": "#444c4d"
+  },
+  {
+    "title": "A Ma Maniére x Air Jordan 4 Retro 'Dark Mocha'",
+    "price": "$269",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/114/503/496/original/1568872_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/a-ma-maniere-x-air-jordan-4-retro-dark-mocha-if3102-200",
+    "brand": "Nike",
+    "primary_color": "orange",
+    "primary_color_hex": "#4c392f"
+  },
+  {
+    "title": "Air Jordan 4 Retro 'Red Thunder'",
+    "price": "$401",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/061/943/941/original/791362_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/air-jordan-4-retro-red-thunder-ct8527-016",
+    "brand": "Nike",
+    "primary_color": "red",
+    "primary_color_hex": "#e2262a"
+  },
+  {
+    "title": "Nike SB x Air Jordan 4 Retro SP 'Pine Green'",
+    "price": "$319",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/086/042/495/original/1154359_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/nike-sb-x-air-jordan-4-retro-pine-green-dr5415-103",
+    "brand": "Nike",
+    "primary_color": "teal",
+    "primary_color_hex": "#07845c"
+  },
+  {
+    "title": "Air Jordan 4 Retro SE 'Wet Cement'",
+    "price": "$298",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/102/269/716/original/1330208_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/air-jordan-4-retro-se-smoke-grey-fq7928-001",
+    "brand": "Nike",
+    "primary_color": "light_gray",
+    "primary_color_hex": "#b2b3b7"
+  },
+  {
+    "title": "Air Jordan 4 Retro OG 'Bred' 2019",
+    "price": "$389",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/079/306/456/original/461782_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/air-jordan-4-retro-bred-2019-308497-060",
+    "brand": "Nike",
+    "primary_color": "red",
+    "primary_color_hex": "#a95c60"
+  },
+  {
+    "title": "A Ma Maniére x Wmns Air Jordan 4 Retro 'While You Were Sleeping'",
+    "price": "$155",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/104/352/182/original/1382366_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/a-ma-maniere-x-wmns-air-jordan-4-retro-fossil-stone-fz4810-200",
+    "brand": "Nike",
+    "primary_color": "orange",
+    "primary_color_hex": "#cdb9ac"
+  },
+  {
+    "title": "Air Jordan 4 Retro 'Fear' 2024",
+    "price": "$226",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/105/545/598/original/1373134_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/air-jordan-4-retro-fear-2024-fq8138-002",
+    "brand": "Nike",
+    "primary_color": "gray",
+    "primary_color_hex": "#7b7a7a"
+  },
+  {
+    "title": "Air Jordan 4 Retro OG 'Fire Red' 2020",
+    "price": "$311",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/099/930/657/original/612313_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/air-jordan-4-retro-og-fire-red-2020-dc7770-160",
+    "brand": "Nike",
+    "primary_color": "red",
+    "primary_color_hex": "#b91817"
+  },
+  {
+    "title": "Wmns Air Jordan 4 Retro 'Orchid'",
+    "price": "$307",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/104/352/216/original/1394973_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/wmns-air-jordan-4-retro-orchid-aq9129-501",
+    "brand": "Nike",
+    "primary_color": "pink",
+    "primary_color_hex": "#cca5bc"
+  },
+  {
+    "title": "Air Jordan 4 Retro 'Thunder' 2023",
+    "price": "$291",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/086/042/594/original/1124754_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/air-jordan-4-retro-thunder-2023-dh6927-017",
+    "brand": "Nike",
+    "primary_color": "orange",
+    "primary_color_hex": "#494233"
+  },
+  {
+    "title": "Air Jordan 4 Retro SE 'Black Canvas'",
+    "price": "$333",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/079/407/687/original/933532_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/air-jordan-4-retro-black-canvas-dh7138-006",
+    "brand": "Nike",
+    "primary_color": "light_gray",
+    "primary_color_hex": "#bdc1c4"
+  },
+  {
+    "title": "Off-White x Wmns Air Jordan 4 Retro SP 'Sail'",
+    "price": "$743",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/083/344/818/original/603678_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/off-white-x-wmns-air-jordan-4-sp-sail-cv9388-100",
+    "brand": "Nike",
+    "primary_color": "orange",
+    "primary_color_hex": "#ccc4b4"
+  },
+  {
+    "title": "Air Jordan 4 Retro 'Toro Bravo' 2026",
+    "price": null,
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/113/416/684/original/FQ8138_20600.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/air-jordan-4-retro-toro-bravo-2026-fq8138-600",
+    "brand": "Nike",
+    "primary_color": "red",
+    "primary_color_hex": "#a41d2b"
+  },
+  {
+    "title": "Air Jordan 4 Retro 'University Blue'",
+    "price": "$390",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/100/575/386/original/631510_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/air-jordan-4-retro-university-blue-ct8527-400",
+    "brand": "Nike",
+    "primary_color": "blue",
+    "primary_color_hex": "#557fa9"
+  },
+  {
+    "title": "Air Jordan 4 Retro 'Military Black'",
+    "price": "$335",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/071/333/263/original/895934_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/air-jordan-4-retro-military-black-dh6927-111",
+    "brand": "Nike",
+    "primary_color": "black",
+    "primary_color_hex": "#2e2c2c"
+  },
+  {
+    "title": "Air Jordan 4 Retro 'Lightning' 2021",
+    "price": "$250",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/058/005/414/original/704168_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/air-jordan-4-retro-lightning-2021-ct8527-700",
+    "brand": "Nike",
+    "primary_color": "yellow",
+    "primary_color_hex": "#e0b92e"
+  },
+  {
+    "title": "Air Jordan 4 Retro 'Red Cement'",
+    "price": "$218",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/092/326/342/original/1200361_00.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/air-jordan-4-retro-red-cement-dh6927-161",
+    "brand": "Nike",
+    "primary_color": "red",
+    "primary_color_hex": "#af2530"
+  },
+  {
+    "title": "Air Jordan 4 Retro 'Midnight Navy'",
+    "price": "$281",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/078/713/580/original/946189_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/air-jordan-4-retro-midnight-navy-dh6927-140",
+    "brand": "Nike",
+    "primary_color": "blue",
+    "primary_color_hex": "#2e354c"
+  },
+  {
+    "title": "Air Jordan 4 Retro '25th Silver Anniversary'",
+    "price": "$135",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/101/059/865/original/14970_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/air-jordan-4-retro-silver-anniversary-408202-101",
+    "brand": "Nike",
+    "primary_color": "light_gray",
+    "primary_color_hex": "#c5c2ca"
+  },
+  {
+    "title": "A Ma Maniére x Air Jordan 4 Retro 'Violet Ore'",
+    "price": "$198",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/081/581/385/original/1015173_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/a-ma-maniere-x-air-jordan-4-retro-violet-ore-dv6773-220",
+    "brand": "Nike",
+    "primary_color": "yellow",
+    "primary_color_hex": "#dbd1b3"
+  },
+  {
+    "title": "Air Jordan 4 Retro 'White Oreo'",
+    "price": "$382",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/101/702/194/original/697107_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/air-jordan-4-retro-oreo-ct8527-100",
+    "brand": "Nike",
+    "primary_color": "dark_gray",
+    "primary_color_hex": "#494948"
+  },
+  {
+    "title": "Air Jordan 4 Retro 'Taupe Haze'",
+    "price": "$352",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/100/301/672/original/721864_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/air-jordan-4-retro-taupe-haze-db0732-200",
+    "brand": "Nike",
+    "primary_color": "gray",
+    "primary_color_hex": "#83776e"
+  },
+  {
+    "title": "Air Jordan 4 Retro OG GS 'White Cement' 2025",
+    "price": "$149",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/109/908/017/original/1557903_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/air-jordan-4-retro-og-gs-white-cement-2025-ib4171-100",
+    "brand": "Nike",
+    "primary_color": "light_gray",
+    "primary_color_hex": "#c8cccc"
+  },
+  {
+    "title": "New Balance 2002R 'Protection Pack - Rain Cloud'",
+    "price": "$118",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/114/482/606/original/793108_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/2002r-protection-pack-rain-cloud-m2002rda",
+    "brand": "New Balance",
+    "primary_color": "orange",
+    "primary_color_hex": "#c7baa4"
+  },
+  {
+    "title": "New Balance 2002R 'Protection Pack - Phantom'",
+    "price": "$138",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/058/631/189/original/793107_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/2002r-protection-pack-phantom-m2002rdb",
+    "brand": "New Balance",
+    "primary_color": "dark_gray",
+    "primary_color_hex": "#434648"
+  },
+  {
+    "title": "New Balance 9060 'Black Cat'",
+    "price": "$165",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/107/176/999/original/1540683_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/9060-black-grey-u9060zge",
+    "brand": "New Balance",
+    "primary_color": "blue",
+    "primary_color_hex": "#343c44"
+  },
+  {
+    "title": "New Balance 1906R 'Silver Metallic Black'",
+    "price": "$105",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/101/572/338/original/1432530_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/1906r-silver-metallic-black-m1906rer",
+    "brand": "New Balance",
+    "primary_color": "gray",
+    "primary_color_hex": "#7b7978"
+  },
+  {
+    "title": "New Balance 740v2 'Black Silver Metallic'",
+    "price": "$99",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/106/489/367/original/1454274_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/740-black-silver-u740bm2",
+    "brand": "New Balance",
+    "primary_color": "dark_gray",
+    "primary_color_hex": "#3b3c44"
+  },
+  {
+    "title": "New Balance 9060 'Suede Pack - Sea Salt'",
+    "price": "$145",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/096/704/479/original/1209964_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/9060-white-grey-u9060hsc",
+    "brand": "New Balance",
+    "primary_color": "gray",
+    "primary_color_hex": "#82807b"
+  },
+  {
+    "title": "New Balance 1906R 'Silver Metallic Cream'",
+    "price": "$75",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/097/811/431/original/1338400_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/1906r-silver-metallic-cream-m1906ree",
+    "brand": "New Balance",
+    "primary_color": "gray",
+    "primary_color_hex": "#8a8983"
+  },
+  {
+    "title": "New Balance 1906A 'Black'",
+    "price": "$184",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/104/638/111/original/1412506_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/1906-black-dark-silver-metallic-m1906af",
+    "brand": "New Balance",
+    "primary_color": "dark_gray",
+    "primary_color_hex": "#424243"
+  },
+  {
+    "title": "New Balance 850 'Grey'",
+    "price": "$99",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/108/522/032/original/609997_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/850-grey-ml850cf",
+    "brand": "New Balance",
+    "primary_color": "light_gray",
+    "primary_color_hex": "#bdbaba"
+  },
+  {
+    "title": "New Balance 9060 'Triple Black Suede'",
+    "price": "$125",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/095/830/549/original/1255276_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/9060-triple-black-u9060bpm",
+    "brand": "New Balance",
+    "primary_color": "dark_gray",
+    "primary_color_hex": "#3e3f3f"
+  },
+  {
+    "title": "New Balance 530 'White Natural Indigo'",
+    "price": "$84",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/071/383/825/original/602070_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/mr530sg-white-mr530sg",
+    "brand": "New Balance",
+    "primary_color": "dark_gray",
+    "primary_color_hex": "#403e41"
+  },
+  {
+    "title": "New Balance 1906R 'Metallic Silver Metallic Gold'",
+    "price": "$79",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/077/813/907/original/1019489_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/1906r-white-gold-m1906ra",
+    "brand": "New Balance",
+    "primary_color": "light_gray",
+    "primary_color_hex": "#bcbcbe"
+  },
+  {
+    "title": "New Balance 2002R 'Protection Pack - Sea Salt'",
+    "price": "$125",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/112/723/640/original/793106_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/2002r-protection-pack-sea-salt-m2002rdc",
+    "brand": "New Balance",
+    "primary_color": "orange",
+    "primary_color_hex": "#c2baa7"
+  },
+  {
+    "title": "New Balance 1906R 'Pink Taffy'",
+    "price": "$79",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/111/465/986/original/1621637_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/1906r-pink-taffy-u1906rcu",
+    "brand": "New Balance",
+    "primary_color": "red",
+    "primary_color_hex": "#925e6a"
+  },
+  {
+    "title": "New Balance 9060 'Black Castlerock'",
+    "price": "$118",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/103/067/316/original/1029570_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/9060-black-castlerock-u9060blk",
+    "brand": "New Balance",
+    "primary_color": "dark_gray",
+    "primary_color_hex": "#434444"
+  },
+  {
+    "title": "New Balance 1000 'Black Cat'",
+    "price": "$133",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/107/978/001/original/1508929_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/1000-triple-black-m1000la",
+    "brand": "New Balance",
+    "primary_color": "black",
+    "primary_color_hex": "#04040c"
+  },
+  {
+    "title": "New Balance 9060 'Arctic Grey'",
+    "price": "$157",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/094/280/986/original/1252921_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/9060-washed-blue-u9060ib",
+    "brand": "New Balance",
+    "primary_color": "blue",
+    "primary_color_hex": "#747e91"
+  },
+  {
+    "title": "New Balance 1906R 'Silver Metallic Deep Ocean'",
+    "price": "$59",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/109/052/762/original/1508815_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/1906r-silver-metallic-deep-ocean-u1906rce",
+    "brand": "New Balance",
+    "primary_color": "light_gray",
+    "primary_color_hex": "#c1c7c8"
+  },
+  {
+    "title": "New Balance BAPE x 2002R 'Apes Together Strong - Black Camo'",
+    "price": "$431",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/102/475/593/original/775604_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/bape-x-2002r-apes-together-strong-camo-m2002r-bape-camo",
+    "brand": "New Balance",
+    "primary_color": "gray",
+    "primary_color_hex": "#7d7c74"
+  },
+  {
+    "title": "New Balance 2002R 'Black Cat'",
+    "price": "$134",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/109/925/143/original/1539932_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/2002r-triple-black-suede-u2002rbl",
+    "brand": "New Balance",
+    "primary_color": "dark_gray",
+    "primary_color_hex": "#414141"
+  },
+  {
+    "title": "New Balance 1906L 'Silver Shadow Grey'",
+    "price": "$136",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/104/356/862/original/1458968_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/1906l-silver-shadow-grey-u1906lae",
+    "brand": "New Balance",
+    "primary_color": "gray",
+    "primary_color_hex": "#868280"
+  },
+  {
+    "title": "New Balance 1906D 'Protection Pack - Triple Black'",
+    "price": "$119",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/110/373/969/original/M1906DF.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/1906d-protection-pack-triple-black-m1906df",
+    "brand": "New Balance",
+    "primary_color": "dark_gray",
+    "primary_color_hex": "#3c3c3c"
+  },
+  {
+    "title": "New Balance 1000 'Mallard Green Sea Salt'",
+    "price": "$133",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/104/335/919/original/1398059_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/1000-green-grey-m1000ma",
+    "brand": "New Balance",
+    "primary_color": "gray",
+    "primary_color_hex": "#7c8e7c"
+  },
+  {
+    "title": "New Balance 550 'White Timberwolf'",
+    "price": "$73",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/093/146/401/original/1251415_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/550-white-timberwolf-bb550pwg",
+    "brand": "New Balance",
+    "primary_color": "orange",
+    "primary_color_hex": "#ccbda2"
+  },
+  {
+    "title": "New Balance 2002R 'Protection Pack - Lunar New Year'",
+    "price": "$176",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/083/180/513/original/1108585_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/2002r-protection-pack-lunar-new-year-m2002rdy",
+    "brand": "New Balance",
+    "primary_color": "gray",
+    "primary_color_hex": "#888382"
+  },
+  {
+    "title": "New Balance 2002R 'Black Gunmetal'",
+    "price": "$109",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/102/715/186/original/1077246_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/2002r-black-gunmetal-m2002rbk",
+    "brand": "New Balance",
+    "primary_color": "dark_gray",
+    "primary_color_hex": "#434040"
+  },
+  {
+    "title": "New Balance 530 'Raincloud'",
+    "price": "$95",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/098/383/999/original/1223669_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/530-raincloud-mr530ck",
+    "brand": "New Balance",
+    "primary_color": "light_gray",
+    "primary_color_hex": "#bbbcba"
+  },
+  {
+    "title": "New Balance 1906A 'Black Dragon Berry'",
+    "price": "$133",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/110/439/920/original/U1906AD.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/1906a-black-pink-u1906ad",
+    "brand": "New Balance",
+    "primary_color": "dark_gray",
+    "primary_color_hex": "#493c43"
+  },
+  {
+    "title": "New Balance 2002R 'Protection Pack - Eclipse'",
+    "price": "$99",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/090/948/421/original/M2002RDO.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/2002r-protection-pack-eclipse-m2002rdo",
+    "brand": "New Balance",
+    "primary_color": "gray",
+    "primary_color_hex": "#8f8c84"
+  },
+  {
+    "title": "New Balance 1906A 'Silver Gold Metallic'",
+    "price": "$149",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/102/529/653/original/1412509_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/1906-silver-gold-metallic-m1906ad",
+    "brand": "New Balance",
+    "primary_color": "orange",
+    "primary_color_hex": "#cdc2b1"
+  },
+  {
+    "title": "New Balance 1906D 'Protection Pack - White Turtledove'",
+    "price": "$183",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/089/916/890/original/M1906DE.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/1906d-protection-pack-triple-white-m1906de",
+    "brand": "New Balance",
+    "primary_color": "yellow",
+    "primary_color_hex": "#c7c4b4"
+  },
+  {
+    "title": "New Balance 2002R 'Protection Pack - Brown' size? Exclusive",
+    "price": "$207",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/108/934/276/original/1588784_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/2002r-protection-pack-brown-size-exclusive-m2002rd6",
+    "brand": "New Balance",
+    "primary_color": "orange",
+    "primary_color_hex": "#957b6a"
+  },
+  {
+    "title": "New Balance 9060 'Quartz Grey'",
+    "price": "$139",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/088/718/113/original/1176789_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/9060-quartz-grey-u9060hsa",
+    "brand": "New Balance",
+    "primary_color": "yellow",
+    "primary_color_hex": "#dcd7c6"
+  },
+  {
+    "title": "New Balance 1906R 'Black Silver'",
+    "price": "$173",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/109/973/437/original/1569707_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/1906r-primaloft-black-silver-u1906ros",
+    "brand": "New Balance",
+    "primary_color": "dark_gray",
+    "primary_color_hex": "#3c4142"
+  },
+  {
+    "title": "New Balance 740v2 'White Navy Shadow Grey'",
+    "price": "$102",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/105/923/022/original/1412944_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/740v2-navy-white-shadow-grey-u740wn2",
+    "brand": "New Balance",
+    "primary_color": "light_gray",
+    "primary_color_hex": "#c1c1c1"
+  },
+  {
+    "title": "New Balance 9060 'Pink Overdye' ASOS Exclusive",
+    "price": "$197",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/102/637/112/original/U9060APP.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/9060-pink-overdye-asos-exclusive-u9060app",
+    "brand": "New Balance",
+    "primary_color": "pink",
+    "primary_color_hex": "#d19eb3"
+  },
+  {
+    "title": "New Balance 990v4 Made in USA 'Grey Silver'",
+    "price": "$123",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/089/261/135/original/1188438_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/990v4-made-in-usa-grey-silver-u990gr4",
+    "brand": "New Balance",
+    "primary_color": "gray",
+    "primary_color_hex": "#807f80"
+  },
+  {
+    "title": "New Balance 990v6 Made in USA 'Castlerock'",
+    "price": "$137",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/079/697/059/original/M990GL6.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/990v6-made-in-usa-castlerock-m990gl6",
+    "brand": "New Balance",
+    "primary_color": "light_gray",
+    "primary_color_hex": "#bcbcbd"
+  },
+  {
+    "title": "New Balance 990v3 Made in USA 'Grey'",
+    "price": "$208",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/062/767/261/original/827852_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/990v3-made-in-usa-grey-m990gy3",
+    "brand": "New Balance",
+    "primary_color": "gray",
+    "primary_color_hex": "#828485"
+  },
+  {
+    "title": "Teddy Santis x New Balance 990v4 Made in USA 'Arctic Grey Black'",
+    "price": "$179",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/100/584/347/original/U990BB4.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/990v4-made-in-usa-arctic-grey-black-u990bb4",
+    "brand": "New Balance",
+    "primary_color": "blue",
+    "primary_color_hex": "#738290"
+  },
+  {
+    "title": "New Balance 990v3 Made In USA 'Black'",
+    "price": "$159",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/060/843/377/original/M990BS3.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/990v3-made-in-usa-black-m990bs3",
+    "brand": "New Balance",
+    "primary_color": "dark_gray",
+    "primary_color_hex": "#444343"
+  },
+  {
+    "title": "Bodega x New Balance 990v3 Made In USA 'Anniversary'",
+    "price": "$175",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/056/408/218/original/773877_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/bodega-x-990v3-made-in-usa-15th-anniversary-bodega-990v3",
+    "brand": "New Balance",
+    "primary_color": "orange",
+    "primary_color_hex": "#cbc5bd"
+  },
+  {
+    "title": "Action Bronson x New Balance 990v6 Made in USA 'Amazõnia'",
+    "price": "$175",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/109/712/797/original/1560799_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/action-bronson-x-990v6-made-in-usa-amazonia-00011-10000abx9mi",
+    "brand": "New Balance",
+    "primary_color": "orange",
+    "primary_color_hex": "#bcb4a5"
+  },
+  {
+    "title": "Action Bronson x New Balance 990v6 Made in USA 'Lapis Lazuli'",
+    "price": "$173",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/090/376/201/original/1177634_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/action-bronson-x-990v6-made-in-usa-lapis-lazuli-m990ac6",
+    "brand": "New Balance",
+    "primary_color": "blue",
+    "primary_color_hex": "#687eb2"
+  },
+  {
+    "title": "New Balance 990v4 Made In USA 'Red Label - Grey'",
+    "price": "$268",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/063/309/095/original/847756_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/990v4-made-in-usa-red-label-grey-m990vs4",
+    "brand": "New Balance",
+    "primary_color": "light_gray",
+    "primary_color_hex": "#b6b8bc"
+  },
+  {
+    "title": "New Balance 990v4 Made in USA 'Black Silver' 2023",
+    "price": "$154",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/098/037/291/original/1245736_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/990v4-made-in-usa-black-silver-2023-u990bl4",
+    "brand": "New Balance",
+    "primary_color": "dark_gray",
+    "primary_color_hex": "#474646"
+  },
+  {
+    "title": "Action Bronson x New Balance 990v6 Made in USA 'Untitled'",
+    "price": "$229",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/109/522/810/original/1493965_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/action-bronson-x-990v6-made-in-usa-multi-color-u990at6",
+    "brand": "New Balance",
+    "primary_color": "orange",
+    "primary_color_hex": "#d4c49e"
+  },
+  {
+    "title": "New Balance Teddy Santis x 990v4 Made in USA 'Grey Black'",
+    "price": "$132",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/098/145/455/original/1265691_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/teddy-santis-x-990v4-made-in-usa-grey-cream-u990tg4",
+    "brand": "New Balance",
+    "primary_color": "gray",
+    "primary_color_hex": "#7f7c7a"
+  },
+  {
+    "title": "Teddy Santis x New Balance 990v3 Made in USA 'Tan Orange'",
+    "price": "$166",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/086/427/742/original/1128528_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/teddy-santis-x-990v3-made-in-usa-khaki-orange-m990bt3",
+    "brand": "New Balance",
+    "primary_color": "orange",
+    "primary_color_hex": "#9f855e"
+  },
+  {
+    "title": "Teddy Santis x New Balance 990v4 Made in USA 'Plum Purple'",
+    "price": "$147",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/090/793/997/original/1160084_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/teddy-santis-x-990v4-made-in-usa-purple-suede-u990tb4",
+    "brand": "New Balance",
+    "primary_color": "purple",
+    "primary_color_hex": "#3c2c5c"
+  },
+  {
+    "title": "New Balance 990v6 Made in USA 'Workwear'",
+    "price": "$69",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/098/863/540/original/1338384_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/990v6-made-in-usa-workwear-grey-u990tn6",
+    "brand": "New Balance",
+    "primary_color": "orange",
+    "primary_color_hex": "#b98651"
+  },
+  {
+    "title": "Teddy Santis x New Balance 990v3 Made in USA 'Green Gold'",
+    "price": "$183",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/086/390/387/original/1145879_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/teddy-santis-x-990v3-made-in-usa-green-yellow-m990gg3",
+    "brand": "New Balance",
+    "primary_color": "orange",
+    "primary_color_hex": "#cfc4a4"
+  },
+  {
+    "title": "Teddy Santis x New Balance 990v6 Made in USA 'Reflection Marblehead'",
+    "price": "$149",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/103/411/367/original/1413026_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/990v6-made-in-usa-reflection-marblehead-u990nc6",
+    "brand": "New Balance",
+    "primary_color": "gray",
+    "primary_color_hex": "#787573"
+  },
+  {
+    "title": "Action Bronson x New Balance 990v6 Made in USA 'Baklava'",
+    "price": "$215",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/086/558/535/original/1163349_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/action-bronson-x-990v6-made-in-usa-baklava-m990ab6",
+    "brand": "New Balance",
+    "primary_color": "orange",
+    "primary_color_hex": "#d0b587"
+  },
+  {
+    "title": "Teddy Santis x New Balance 990v6 Made in USA 'Paris'",
+    "price": "$723",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/103/647/386/original/U990PA6.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/teddy-santis-x-990v6-made-in-usa-paris-u990pa6",
+    "brand": "New Balance",
+    "primary_color": "orange",
+    "primary_color_hex": "#544639"
+  },
+  {
+    "title": "Teddy Santis x New Balance 990v6 Made in USA 'Community Pack - Red'",
+    "price": "$98",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/110/860/320/original/1626296_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/action-bronson-x-990v6-made-in-usa-community-red-u990rt6",
+    "brand": "New Balance",
+    "primary_color": "red",
+    "primary_color_hex": "#dd817f"
+  },
+  {
+    "title": "JJJJound x New Balance 990v3 Made in USA 'Olive'",
+    "price": "$308",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/068/534/786/original/858718_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/jjjjound-x-990v3-made-in-usa-olive-m990jd3",
+    "brand": "New Balance",
+    "primary_color": "green",
+    "primary_color_hex": "#8c9370"
+  },
+  {
+    "title": "New Balance 990v6 Made in USA 'Triple Black'",
+    "price": "$149",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/096/962/500/original/U990BB6.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/990v6-made-in-usa-triple-black-u990bb6",
+    "brand": "New Balance",
+    "primary_color": "dark_gray",
+    "primary_color_hex": "#34343c"
+  },
+  {
+    "title": "JJJJound x New Balance 990v3 Made in USA 'Brown'",
+    "price": "$284",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/072/573/501/original/933555_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/jjjjound-x-990v3-made-in-usa-brown-m990jj3",
+    "brand": "New Balance",
+    "primary_color": "orange",
+    "primary_color_hex": "#544430"
+  },
+  {
+    "title": "New Balance 990v6 Made in USA 'Salmon'",
+    "price": "$77",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/109/205/347/original/1563512_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/990v6-made-in-usa-salmon-u990sr6",
+    "brand": "New Balance",
+    "primary_color": "red",
+    "primary_color_hex": "#f88984"
+  },
+  {
+    "title": "New Balance 990v3 Made In USA 'Navy'",
+    "price": "$139",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/062/092/219/original/822585_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/990-made-in-usa-navy-denim-m990nb3",
+    "brand": "New Balance",
+    "primary_color": "gray",
+    "primary_color_hex": "#767a79"
+  },
+  {
+    "title": "Teddy Santis x New Balance 990v6 Made in USA 'Light Mushroom Moonrock'",
+    "price": "$154",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/108/059/033/original/U990MM6.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/990v6-made-in-usa-light-mushroom-moonrock-u990mm6",
+    "brand": "New Balance",
+    "primary_color": "orange",
+    "primary_color_hex": "#99826b"
+  },
+  {
+    "title": "Teddy Santis x New Balance 990v6 Made in USA 'Community Pack - Navy'",
+    "price": "$174",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/110/779/946/original/U990LT6.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/teddy-santis-x-990v6-made-in-usa-community-pack-vintage-indigo-u990lt6",
+    "brand": "New Balance",
+    "primary_color": "blue",
+    "primary_color_hex": "#5c6f88"
+  },
+  {
+    "title": "Teddy Santis x New Balance 990v3 Made in USA 'Raw Amethyst'",
+    "price": "$275",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/075/487/825/original/1001491_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/teddy-santis-x-990v3-made-in-usa-raw-amethyst-m990td3",
+    "brand": "New Balance",
+    "primary_color": "purple",
+    "primary_color_hex": "#bcacc4"
+  },
+  {
+    "title": "Teddy Santis x New Balance 990v3 Made in USA 'Green Purple'",
+    "price": "$156",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/083/405/611/original/1099762_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/teddy-santis-x-990v3-made-in-usa-olive-burgundy-m990gp3",
+    "brand": "New Balance",
+    "primary_color": "red",
+    "primary_color_hex": "#5e4a44"
+  },
+  {
+    "title": "New Balance Teddy Santis x 990v3 Made in USA 'Scarlet Marblehead'",
+    "price": "$234",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/076/377/168/original/1009957_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/990v3-made-in-usa-scarlet-marblehead-m990tf3",
+    "brand": "New Balance",
+    "primary_color": "gray",
+    "primary_color_hex": "#7c7978"
+  },
+  {
+    "title": "New Balance 990v5 Made in USA 'Castlerock'",
+    "price": "$192",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/092/667/809/original/495387_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/990v5-grey-m990gl5",
+    "brand": "New Balance",
+    "primary_color": "light_gray",
+    "primary_color_hex": "#c0bfbe"
+  },
+  {
+    "title": "Teddy Santis x New Balance 990v3 Made in USA 'Black Tan'",
+    "price": "$135",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/087/186/267/original/1131714_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/990v3-made-in-usa-black-tan-m990bb3",
+    "brand": "New Balance",
+    "primary_color": "orange",
+    "primary_color_hex": "#524c3c"
+  },
+  {
+    "title": "Kith x New Balance 990v3 Made in USA 'Steel Blue'",
+    "price": "$239",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/078/499/906/original/1038371_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/kith-x-990v3-made-in-usa-steel-blue-m990ks3",
+    "brand": "New Balance",
+    "primary_color": "dark_gray",
+    "primary_color_hex": "#443c3c"
+  },
+  {
+    "title": "New Balance 990v4 Made in USA 'Castlerock'",
+    "price": "$223",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/100/001/920/original/619249_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/990v4-made-in-usa-castlerock-m990gl4",
+    "brand": "New Balance",
+    "primary_color": "gray",
+    "primary_color_hex": "#808081"
+  },
+  {
+    "title": "New Balance Aimé Leon Dore x 990v4 Made in USA 'True Camo'",
+    "price": "$233",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/112/673/877/original/1457374_00.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/aime-leon-dore-x-990v4-made-in-usa-true-camo-u990ct4",
+    "brand": "New Balance",
+    "primary_color": "orange",
+    "primary_color_hex": "#50452c"
+  },
+  {
+    "title": "Teddy Santis x New Balance 990v6 Made in USA 'Community Pack - Mint'",
+    "price": "$118",
+    "image_url": "https://image.goat.com/transform/v1/attachments/product_template_pictures/images/110/779/944/original/U990GT6.png.png?action=crop&width=750",
+    "product_url": "https://www.goat.com/sneakers/teddy-santis-x-990v6-made-in-usa-clay-ash-u990gt6",
+    "brand": "New Balance",
+    "primary_color": "teal",
+    "primary_color_hex": "#245254"
+  }
+]
