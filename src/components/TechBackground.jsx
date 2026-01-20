@@ -104,7 +104,7 @@ const TopographyMaterial = shaderMaterial(
 
 extend({ TopographyMaterial });
 
-export function TechBackground({ isZoomedIn = false }) {
+export function TechBackground({ isZoomedIn = false, quality = 1 }) {
   const materialRef = useRef();
 
   // Fixed world-space dimensions (doesn't change with camera zoom)
@@ -121,6 +121,15 @@ export function TechBackground({ isZoomedIn = false }) {
     const targetOpacity = isZoomedIn ? 0.25 : 1.0;
     easing.damp(materialRef.current, "uOpacity", targetOpacity, 0.3, delta);
   });
+
+  // Low quality mode: render simple solid color plane (no shader)
+  if (quality < 0.5) {
+    return (
+      <Plane args={[planeWidth, planeHeight]} position={[0, 0, -15]} renderOrder={-1}>
+        <meshBasicMaterial color="#e8e8e8" />
+      </Plane>
+    );
+  }
 
   return (
     // Pass the calculated Width/Height to the geometry

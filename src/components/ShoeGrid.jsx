@@ -172,6 +172,7 @@ function ShoeTile({
         const timeSinceTrigger = now - transitionStartTime;
         const staggerDelay = data.randomDelay || 0;
         const canTransition = timeSinceTrigger > staggerDelay;
+
         // --- 2. Calculate Targets ---
         let targetTransitionOpacity = 1.0;
         let targetTransitionZ = 0;
