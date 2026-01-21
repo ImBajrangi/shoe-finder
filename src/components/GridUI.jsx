@@ -268,9 +268,9 @@ export function UnifiedControlBar({
                 })}
               </div>
 
-              {/* Nike Filters - only show when Nike collection is active */}
+              {/* Nike Filters - only show when Nike collection is active (desktop only) */}
               {currentCollection === 0 && (
-                <>
+                <div className="desktop-filters">
                   {/* Vertical Divider */}
                   <motion.div
                     layout
@@ -299,12 +299,13 @@ export function UnifiedControlBar({
                         key={filter.id}
                         isActive={nikeFilter === filter.id}
                         onClick={() => onFilterChange(filter.id)}
+                        layoutGroup="desktop"
                       >
                         {filter.label}
                       </FilterChip>
                     ))}
                   </motion.div>
-                </>
+                </div>
               )}
 
               {/* Vertical Divider before mic button */}
@@ -327,8 +328,64 @@ export function UnifiedControlBar({
         </AnimatePresence>
       </motion.div>
 
-      {/* Responsive scaling for shorter viewports (tablets) */}
+      {/* Mobile Nike Filters - appears above main bar */}
+      <AnimatePresence>
+        {currentCollection === 0 && !isZoomedIn && !hasActiveSelection && !voiceMode?.isActive && (
+          <motion.div
+            className="mobile-filters"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 20 }}
+            transition={islandTransition}
+            style={{
+              position: "absolute",
+              bottom: "70px",
+              left: 0,
+              right: 0,
+              display: "none", // Hidden by default, shown on mobile via CSS
+              justifyContent: "center",
+              pointerEvents: "none",
+            }}
+          >
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                background: "rgba(255, 255, 255, 0.85)",
+                backdropFilter: "blur(40px) saturate(200%)",
+                WebkitBackdropFilter: "blur(40px) saturate(200%)",
+                borderRadius: "20px",
+                border: "1px solid rgba(255, 255, 255, 0.3)",
+                boxShadow: "0 4px 20px rgba(0, 0, 0, 0.08)",
+                padding: "6px 8px",
+                gap: "4px",
+                pointerEvents: "auto",
+              }}
+            >
+              {nikeFilters.map((filter) => (
+                <FilterChip
+                  key={`mobile-${filter.id}`}
+                  isActive={nikeFilter === filter.id}
+                  onClick={() => onFilterChange(filter.id)}
+                  layoutGroup="mobile"
+                >
+                  {filter.label}
+                </FilterChip>
+              ))}
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* Responsive scaling for shorter viewports (tablets) and mobile */}
       <style>{`
+        .desktop-filters {
+          display: flex;
+          align-items: center;
+        }
+        .mobile-filters {
+          display: none !important;
+        }
         @media (max-height: 800px) {
           .control-bar-container {
             bottom: 24px !important;
@@ -337,8 +394,6 @@ export function UnifiedControlBar({
             height: 48px !important;
             border-radius: 24px !important;
             padding: 4px !important;
-            transform: scale(0.9);
-            transform-origin: bottom center;
           }
         }
         @media (max-height: 650px) {
@@ -347,7 +402,44 @@ export function UnifiedControlBar({
           }
           .control-bar-island {
             height: 44px !important;
-            transform: scale(0.85);
+          }
+        }
+        @media (max-width: 768px) {
+          .control-bar-container {
+            bottom: 20px !important;
+          }
+          .control-bar-island {
+            height: 48px !important;
+            padding: 4px !important;
+          }
+          .desktop-filters {
+            display: none !important;
+          }
+          .mobile-filters {
+            display: flex !important;
+          }
+        }
+        @media (max-width: 480px) {
+          .control-bar-container {
+            bottom: 16px !important;
+          }
+          .control-bar-island {
+            height: 44px !important;
+          }
+          .control-button {
+            width: 36px !important;
+            height: 36px !important;
+          }
+          .tab-button {
+            padding: 6px 10px !important;
+            font-size: 12px !important;
+          }
+          .filter-chip {
+            padding: 4px 8px !important;
+            font-size: 11px !important;
+          }
+          .mobile-filters {
+            bottom: 60px !important;
           }
         }
       `}</style>
@@ -362,6 +454,7 @@ function ControlButton({ onClick, icon, label }) {
     <motion.button
       layout="position" // Prevents icon distortion during resize
       onClick={onClick}
+      className="control-button"
       whileHover={{
         scale: 1.05,
         backgroundColor: "rgba(0,0,0,0.05)",
@@ -421,6 +514,7 @@ function TabButton({ children, isActive, onClick }) {
     <motion.button
       layout
       onClick={onClick}
+      className="tab-button"
       style={{
         position: "relative",
         border: "none",
@@ -459,11 +553,12 @@ function TabButton({ children, isActive, onClick }) {
   );
 }
 
-function FilterChip({ children, isActive, onClick }) {
+function FilterChip({ children, isActive, onClick, layoutGroup = "default" }) {
   return (
     <motion.button
       layout
       onClick={onClick}
+      className="filter-chip"
       whileHover={{ scale: 1.02 }}
       whileTap={{ scale: 0.95 }}
       transition={islandTransition}
@@ -484,7 +579,7 @@ function FilterChip({ children, isActive, onClick }) {
       {/* Animated background pill */}
       {isActive && (
         <motion.div
-          layoutId="activeFilterIndicator"
+          layoutId={`activeFilterIndicator-${layoutGroup}`}
           transition={islandTransition}
           style={{
             position: "absolute",

@@ -5,6 +5,7 @@ export default function MiniMap({
   rigState,
   config,
   totalItems,
+  isZoomedIn,
 }) {
   const containerRef = useRef();
   const canvasRef = useRef();
@@ -12,8 +13,8 @@ export default function MiniMap({
   const centerRef = useRef({ x: 0.5, y: 0.5 });
   const opacityRef = useRef(0);
 
-  // Use relative sizing (percentage of viewport)
-  const mapWidthPercent = 8; // 8% of viewport width
+  // Use relative sizing (percentage of viewport) - larger on mobile
+  const [mapWidthPercent, setMapWidthPercent] = useState(8);
   const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
 
   const aspectRatio = gridDims.width / gridDims.height;
@@ -22,10 +23,19 @@ export default function MiniMap({
       ? window.devicePixelRatio || 1
       : 1;
 
-  // Calculate actual pixel dimensions from percentage
+  // Calculate actual pixel dimensions from percentage, responsive sizing
   useEffect(() => {
     const updateDimensions = () => {
-      const width = (window.innerWidth * mapWidthPercent) / 100;
+      // Larger minimap on mobile
+      let widthPercent = 8; // Desktop default
+      if (window.innerWidth < 480) {
+        widthPercent = 20; // Phone
+      } else if (window.innerWidth < 768) {
+        widthPercent = 15; // Tablet
+      }
+      setMapWidthPercent(widthPercent);
+
+      const width = (window.innerWidth * widthPercent) / 100;
       const height = width / aspectRatio;
       setDimensions({ width, height });
     };
@@ -47,9 +57,12 @@ export default function MiniMap({
       }
 
       // Show when dragging OR when an item is active
+      // On mobile, only show when zoomed in
+      const isMobile = window.innerWidth < 768;
       const isActive =
         rigState.isDragging || rigState.activeId !== null;
-      const targetOp = isActive ? 1 : 0;
+      const shouldShow = isMobile ? (isActive && isZoomedIn) : isActive;
+      const targetOp = shouldShow ? 1 : 0;
       opacityRef.current +=
         (targetOp - opacityRef.current) * 0.1;
       containerRef.current.style.opacity =
@@ -149,7 +162,7 @@ export default function MiniMap({
 
     rafId = requestAnimationFrame(draw);
     return () => cancelAnimationFrame(rafId);
-  }, [gridDims, cols, rows, rigState, config, totalItems]);
+  }, [gridDims, cols, rows, rigState, config, totalItems, isZoomedIn]);
 
   return (
     <div

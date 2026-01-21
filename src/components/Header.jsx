@@ -3,6 +3,7 @@ import React from "react";
 export default function Header() {
   return (
     <header
+      className="site-header"
       style={{
         position: "fixed",
         top: 0,
@@ -86,6 +87,7 @@ export default function Header() {
 
       {/* Right side - minimal nav hints */}
       <div
+        className="header-nav"
         style={{
           display: "flex",
           alignItems: "center",
@@ -98,6 +100,18 @@ export default function Header() {
         <Divider />
         <QuoteText text="FOOTWEAR" />
       </div>
+
+      {/* Mobile responsive styles */}
+      <style>{`
+        @media (max-width: 600px) {
+          .site-header {
+            padding: 16px 20px !important;
+          }
+          .header-nav {
+            display: none !important;
+          }
+        }
+      `}</style>
     </header>
   );
 }

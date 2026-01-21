@@ -862,6 +862,31 @@ export default function ShoeGrid() {
         return () => clearInterval(interval);
     }, []);
     const isZoomedIn = currentZoom <= CONFIG.zoomIn + 0.5;
+
+    // Responsive zoom for mobile viewports
+    useEffect(() => {
+        const updateResponsiveZoom = () => {
+            const width = window.innerWidth;
+            let newZoomOut;
+            if (width < 480) {
+                newZoomOut = 48; // Phone
+            } else if (width < 768) {
+                newZoomOut = 38; // Tablet portrait
+            } else {
+                newZoomOut = DEFAULT_CONFIG.zoomOut; // Desktop default (31)
+            }
+            CONFIG.zoomOut = newZoomOut;
+            // Only update current zoom if we're in zoomed-out state
+            if (rigState.zoom > CONFIG.zoomIn + 2) {
+                rigState.zoom = newZoomOut;
+                setCurrentZoom(newZoomOut);
+            }
+        };
+        updateResponsiveZoom();
+        window.addEventListener("resize", updateResponsiveZoom);
+        return () => window.removeEventListener("resize", updateResponsiveZoom);
+    }, []);
+
     // Filter state for Nike collection
     const [nikeFilter, setNikeFilter] = useState("all"); // 'all' | 'jordan' | 'dunk'
     const [colorFilter, setColorFilter] = useState("all"); // 'all' | 'blue' | 'red' | etc.
@@ -1112,6 +1137,7 @@ export default function ShoeGrid() {
                 rigState={rigState}
                 config={CONFIG}
                 totalItems={filteredItemCount}
+                isZoomedIn={isZoomedIn}
             />
             <UnifiedControlBar
                 currentCollection={activeCollectionIdx}
@@ -1133,47 +1159,6 @@ export default function ShoeGrid() {
                 }
                 onVoiceModeToggle={handleVoiceModeToggle}
             />
-            {/* Mobile warning overlay */}
-            <div
-                className="mobile-warning"
-                style={{
-                    position: "fixed",
-                    inset: 0,
-                    backgroundColor: "#f0f0f0",
-                    display: "none",
-                    flexDirection: "column",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    zIndex: 9999,
-                    padding: "40px",
-                    textAlign: "center",
-                }}
-            >
-                <div style={{ fontSize: "48px", marginBottom: "24px" }}>👟</div>
-                <h2 style={{
-                    fontSize: "20px",
-                    fontWeight: "600",
-                    marginBottom: "12px",
-                    color: "#000",
-                }}>
-                    Desktop Only
-                </h2>
-                <p style={{
-                    fontSize: "14px",
-                    color: "#666",
-                    maxWidth: "280px",
-                    lineHeight: "1.5",
-                }}>
-                    This site isn't optimized for mobile yet. Please visit on a desktop browser for the best experience.
-                </p>
-            </div>
-            <style>{`
-                @media (max-width: 768px) {
-                    .mobile-warning {
-                        display: flex !important;
-                    }
-                }
-            `}</style>
         </div>
     );
 }
