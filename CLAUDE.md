@@ -21,6 +21,7 @@ Next.js 16 app using Pages Router with a custom shadcn-style component library.
 - **Radix UI** primitives for accessible components
 - **Motion** (Framer Motion) for animations
 - **React Three Fiber + Drei** for 3D
+- **glslify** for GLSL shader imports (requires webpack mode)
 - **Sonner** for toasts
 
 ### Component Library (`src/components/ui/`)
@@ -30,6 +31,13 @@ All components follow shadcn patterns: Radix primitives + Tailwind + `cva` for v
 **Barrel export:** Import from `@/components/ui` (see `index.js`)
 
 **Key components:** Accordion, AlertDialog, Avatar, Badge, Button, Checkbox, Chip, Drawer, Separator, Sidebar, Spinner, Tooltip, Toaster
+
+### Shaders (`src/shaders/`)
+
+GLSL shaders use glslify for modular imports. Import noise functions with:
+```glsl
+#pragma glslify: snoise = require('glsl-noise/simplex/2d')
+```
 
 ### Utilities
 
@@ -69,3 +77,4 @@ const buttonVariants = cva("base-classes", {
 - Don't run the dev server to verify changes - use lint instead
 - Prettier auto-sorts Tailwind classes via `prettier-plugin-tailwindcss`
 - Custom animations defined in `globals.css` under `@theme` block
+- Uses webpack mode (not Turbopack) for glslify-loader compatibility
