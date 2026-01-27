@@ -1079,7 +1079,7 @@ export default function ShoeGrid() {
                 touchAction: "none", // Prevent mobile browser touch gestures
             }}
         >
-            <Leva hidden />
+            <Leva collapsed={true} />
             <Header />
             {/* <AgentMarquee
                 text={voice.transcript}
@@ -1099,7 +1099,14 @@ export default function ShoeGrid() {
                     gridH={activeDims.height}
                 />
                 {/* Tech Background - geometric lines and crosshairs for CAD/architectural feel */}
-                <TechBackground isZoomedIn={isZoomedIn} />
+                <TechBackground
+                    isZoomedIn={isZoomedIn}
+                    color={CONFIG.bgColor}
+                    opacity={CONFIG.bgOpacity}
+                    speed={CONFIG.bgSpeed}
+                    scale={CONFIG.bgScale}
+                    lineThickness={CONFIG.bgLineThickness}
+                />
                 <fog
                     attach="fog"
                     args={[

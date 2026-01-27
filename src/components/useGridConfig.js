@@ -55,11 +55,14 @@ export const DEFAULT_CONFIG = {
   transitionYDamp: 0.08, // Y spread animates faster than Z (lower = faster)
   filterOpacityDamp: 0.06, // Filter fade out (lower = faster, used when filtering within collection)
   filterScaleTarget: 0.5, // Scale target when filtered out (smaller = more dramatic shrink)
-  bulgeRadius: 3.5,    // How wide the effect is
-  bulgeStrength: 1.5,  // How high items lift (Z axis)
-  tiltStrength: 0.05,  // How much items scale up (now used for scale, not tilt)   
-};
 
+  // Tech Background
+  bgColor: "#e0e0e0",
+  bgOpacity: 0.4,
+  bgSpeed: 0.05,
+  bgScale: 3.0,
+  bgLineThickness: 0.03,
+};
 
 // Create a ref to hold the current config so it can be updated
 export let CONFIG = { ...DEFAULT_CONFIG };
@@ -71,6 +74,7 @@ Object.assign(CONFIG, DEFAULT_CONFIG);
 export function useGridConfig() {
   // Controls for main config values
   const controls = useControls(
+    "Shoe Grid",
     {
       curvatureStrength: {
         value: DEFAULT_CONFIG.curvatureStrength,
@@ -85,20 +89,6 @@ export function useGridConfig() {
         max: 5,
         step: 0.1,
         label: "Rotation Strength",
-      },
-      fogNear: {
-        value: DEFAULT_CONFIG.fogNear,
-        min: 0,
-        max: 100,
-        step: 1,
-        label: "Fog Near",
-      },
-      fogFar: {
-        value: DEFAULT_CONFIG.fogFar,
-        min: 0,
-        max: 200,
-        step: 1,
-        label: "Fog Far",
       },
       focusScale: {
         value: DEFAULT_CONFIG.focusScale,
@@ -164,12 +154,12 @@ export function useGridConfig() {
         label: "Zoom Out",
       },
     },
-    { collapsed: true }
+    { collapsed: true, order: 0 }
   );
   // Animation controls
-  
+
   const animationControls = useControls(
-    "Animation",
+    "Transition",
     {
       enterStartOpacity: {
         value: DEFAULT_CONFIG.enterStartOpacity,
@@ -263,36 +253,47 @@ export function useGridConfig() {
         label: "Filter Opacity Damp",
       },
     },
-    { collapsed: true }
+    { collapsed: true, order: 1 }
   );
 
-  // Bulge effect controls (Vitra-style cursor proximity effect)
-  const bulgeControls = useControls(
-    "Bulge Effect",
+  // TechBackground controls
+  const techBgControls = useControls(
+    "BG Shader",
     {
-      bulgeRadius: {
-        value: DEFAULT_CONFIG.bulgeRadius,
-        min: 1,
-        max: 10,
-        step: 0.5,
-        label: "Radius",
+      bgColor: {
+        value: "#e0e0e0",
+        label: "Color",
       },
-      bulgeStrength: {
-        value: DEFAULT_CONFIG.bulgeStrength,
+      bgOpacity: {
+        value: 0.4,
         min: 0,
-        max: 5,
-        step: 0.1,
-        label: "Lift Strength",
+        max: 1,
+        step: 0.05,
+        label: "Opacity",
       },
-      tiltStrength: {
-        value: DEFAULT_CONFIG.tiltStrength,
+      bgSpeed: {
+        value: 0.05,
         min: 0,
         max: 0.2,
         step: 0.01,
-        label: "Scale Boost",
+        label: "Speed",
+      },
+      bgScale: {
+        value: 3.0,
+        min: 1,
+        max: 10,
+        step: 0.5,
+        label: "Scale",
+      },
+      bgLineThickness: {
+        value: 0.03,
+        min: 0.01,
+        max: 0.1,
+        step: 0.01,
+        label: "Thickness",
       },
     },
-    { collapsed: true }
+    { collapsed: true, order: 2 }
   );
 
   // Update CONFIG object when controls change
@@ -368,15 +369,15 @@ export function useGridConfig() {
         animationControls.filterOpacityDamp ??
         DEFAULT_CONFIG.filterOpacityDamp;
     }
-    if (bulgeControls) {
-      CONFIG.bulgeRadius =
-        bulgeControls.bulgeRadius ?? DEFAULT_CONFIG.bulgeRadius;
-      CONFIG.bulgeStrength =
-        bulgeControls.bulgeStrength ?? DEFAULT_CONFIG.bulgeStrength;
-      CONFIG.tiltStrength =
-        bulgeControls.tiltStrength ?? DEFAULT_CONFIG.tiltStrength;
+    if (techBgControls) {
+      CONFIG.bgColor = techBgControls.bgColor ?? "#e0e0e0";
+      CONFIG.bgOpacity = techBgControls.bgOpacity ?? 0.4;
+      CONFIG.bgSpeed = techBgControls.bgSpeed ?? 0.05;
+      CONFIG.bgScale = techBgControls.bgScale ?? 3.0;
+      CONFIG.bgLineThickness =
+        techBgControls.bgLineThickness ?? 0.03;
     }
-  }, [controls, animationControls, bulgeControls]);
+  }, [controls, animationControls, techBgControls]);
 
   return controls;
 }
