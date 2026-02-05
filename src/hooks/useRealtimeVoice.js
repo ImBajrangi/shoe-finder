@@ -2,13 +2,19 @@ import { useState, useRef, useCallback, useEffect } from "react";
 
 const SHOE_ASSISTANT_PROMPT = `You are a chill sneaker sales rep. Friendly, brief, helpful.
 
-Collections: Nike (filterable: Jordan, Dunk, and by color), New Balance, Budget (under $150)
+Collections: Nike (filterable by type and color), New Balance, Budget (under $150)
 
-Available colors for Nike: black, white, gray, red, orange, blue, green, purple, pink, yellow, teal
+Nike types: Jordan, Dunk
+Nike colors: black, white, gray, red, orange, blue, green, purple, pink, yellow, teal
+
+You can combine filters: "blue Jordans", "red and black Dunks", "green and teal shoes"
+Multiple colors use OR logic: "blue and green" shows both blue AND green shoes.
+
+You can select specific shoes by name: Travis Scott Dunks, Orange Lobster, Grey Fog, Panda, Powerpuff Girls Bubbles, Undefeated Dunks, various Jordan 1s/4s.
 
 RULES:
-- Use tools immediately
-- MAX 5-6 words. Examples: "Here's the blue ones", "Jordans, nice choice", "New Balance for you", "Budget picks right here"
+- Use tools immediately for any request
+- MAX 5-6 words. Examples: "Here's the blue ones", "Jordans, nice choice", "Blue and green right here", "Travis Scotts right here"
 - Never use punctuation like question marks or exclamation points
 - Chill and confident tone`;
 
@@ -17,7 +23,8 @@ const TOOLS = [
   {
     type: "function",
     name: "switch_collection",
-    description: "Switch to a different shoe collection",
+    description:
+      "Switch to a different shoe collection. Nike has type/color filtering, New Balance is a curated set, Budget shows all shoes under $150.",
     parameters: {
       type: "object",
       properties: {
@@ -32,25 +39,49 @@ const TOOLS = [
   },
   {
     type: "function",
-    name: "apply_filter",
+    name: "filter_shoes",
     description:
-      "Apply a filter to the current Nike collection. Only works when viewing Nike shoes.",
+      "Filter Nike shoes by type and/or color. Supports multiple colors (OR logic) for queries like 'blue and green shoes' or 'red or black Jordans'. Only works on the Nike collection. Omit a field to leave that filter unchanged. Call with no parameters to clear all filters.",
     parameters: {
       type: "object",
       properties: {
-        filter: {
-          type: "string",
-          enum: ["all", "jordan", "dunk"],
-          description: "The filter to apply",
+        types: {
+          type: "array",
+          items: {
+            type: "string",
+            enum: ["jordan", "dunk"],
+          },
+          description:
+            "Shoe types to show. ['jordan'] for Jordans, ['dunk'] for Dunks. Omit to leave type filter unchanged.",
+        },
+        colors: {
+          type: "array",
+          items: {
+            type: "string",
+            enum: [
+              "black",
+              "white",
+              "gray",
+              "red",
+              "orange",
+              "blue",
+              "green",
+              "purple",
+              "pink",
+              "yellow",
+              "teal",
+            ],
+          },
+          description:
+            "Colors to show (OR logic). ['blue','green'] shows blue OR green shoes. Omit to leave color filter unchanged.",
         },
       },
-      required: ["filter"],
     },
   },
   {
     type: "function",
     name: "set_zoom",
-    description: "Zoom in to see shoes closer or zoom out for overview",
+    description: "Zoom in to see shoes closer or zoom out for the full grid overview.",
     parameters: {
       type: "object",
       properties: {
@@ -65,30 +96,29 @@ const TOOLS = [
   },
   {
     type: "function",
-    name: "filter_by_color",
+    name: "go_back",
     description:
-      "Filter shoes by their primary color. Only works when viewing Nike collection.",
+      "Reset everything: zoom out to overview, clear all filters, and deselect any shoe. Use for 'go back', 'reset', 'start over', 'show everything'.",
     parameters: {
       type: "object",
-      properties: {
-        color: {
-          type: "string",
-          enum: ["all", "black", "white", "gray", "red", "orange", "blue", "green", "purple", "pink", "yellow", "teal"],
-          description: "The color to filter by, or 'all' to clear the filter",
-        },
-      },
-      required: ["color"],
+      properties: {},
     },
   },
   {
     type: "function",
-    name: "go_back",
+    name: "select_shoe",
     description:
-      "Go back to the overview - zooms out and clears all filters. Use when user says 'go back', 'reset', 'start over', 'show everything', etc.",
+      "Select and zoom into a specific shoe by name. Searches the current collection by title keywords. Use for 'show me the Travis Scotts' or 'I want to see the Orange Lobster'.",
     parameters: {
       type: "object",
-      properties: {},
-      required: [],
+      properties: {
+        search: {
+          type: "string",
+          description:
+            "Keywords to match against shoe titles (e.g. 'travis scott', 'orange lobster', 'grey fog', 'panda')",
+        },
+      },
+      required: ["search"],
     },
   },
 ];
@@ -174,9 +204,13 @@ export function useRealtimeVoice({ systemPrompt, onCommand } = {}) {
         return { success: false, message: "Unknown collection" };
       }
 
-      case "apply_filter": {
-        onCommandRef.current?.({ type: "filter", value: args.filter });
-        return { success: true, message: `Applied ${args.filter} filter` };
+      case "filter_shoes": {
+        const parts = [];
+        if (args.types?.length) parts.push(`types: ${args.types.join(", ")}`);
+        if (args.colors?.length) parts.push(`colors: ${args.colors.join(", ")}`);
+        const msg = parts.length > 0 ? `Filtered by ${parts.join(" and ")}` : "Cleared all filters";
+        onCommandRef.current?.({ type: "filterShoes", value: { types: args.types, colors: args.colors } });
+        return { success: true, message: msg };
       }
 
       case "set_zoom": {
@@ -184,14 +218,14 @@ export function useRealtimeVoice({ systemPrompt, onCommand } = {}) {
         return { success: true, message: `Zoomed ${args.level}` };
       }
 
-      case "filter_by_color": {
-        onCommandRef.current?.({ type: "colorFilter", value: args.color });
-        return { success: true, message: `Filtered by ${args.color}` };
-      }
-
       case "go_back": {
         onCommandRef.current?.({ type: "goBack" });
         return { success: true, message: "Back to overview" };
+      }
+
+      case "select_shoe": {
+        onCommandRef.current?.({ type: "selectShoe", value: args.search });
+        return { success: true, message: `Searching for ${args.search}` };
       }
 
       default:

@@ -309,7 +309,7 @@ export function UnifiedControlBar({
               )}
 
               {/* Vertical Divider before mic button */}
-              {/* <motion.div
+              <motion.div
                 layout
                 initial={{ opacity: 0, height: 0 }}
                 animate={{ opacity: 1, height: "24px" }}
@@ -322,7 +322,7 @@ export function UnifiedControlBar({
                 }}
               />
 
-              <MicButton onClick={onVoiceModeToggle} /> */}
+              <MicButton onClick={onVoiceModeToggle} />
             </motion.div>
           )}
         </AnimatePresence>

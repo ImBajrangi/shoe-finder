@@ -31,7 +31,6 @@ import { CloseButton } from "./CloseButton";
 import Header from "./Header";
 import { TechBackground } from "./TechBackground";
 import { useRealtimeVoice } from "../hooks/useRealtimeVoice";
-import { AgentMarquee } from "./AgentMarquee";
 import "./HoloCardMaterial"; // Registers <holoCardMaterial /> with R3F
 
 // --- PRELOAD ALL TEXTURES ---
@@ -701,8 +700,11 @@ function Rig({ gridW, gridH }) {
     return null;
 }
 
+// Stable empty array to avoid unnecessary re-renders
+const EMPTY_COLORS = [];
+
 // --- HELPER: Check if item matches filter ---
-const matchesFilter = (item, filter, colorFilter = "all") => {
+const matchesFilter = (item, filter, colorFilter = EMPTY_COLORS) => {
     // Check type filter (jordan/dunk)
     let matchesType = true;
     if (filter !== "all") {
@@ -711,16 +713,15 @@ const matchesFilter = (item, filter, colorFilter = "all") => {
         else if (filter === "dunk") matchesType = title.includes("dunk");
     }
 
-    // Check color filter
+    // Check color filter (array - OR logic across colors)
     let matchesColor = true;
-    if (colorFilter !== "all") {
+    if (colorFilter.length > 0) {
         const shoeColor = item.primary_color || "";
-        // Match gray variants (gray, dark_gray, light_gray) when "gray" is selected
-        if (colorFilter === "gray") {
-            matchesColor = shoeColor.includes("gray");
-        } else {
-            matchesColor = shoeColor === colorFilter;
-        }
+        matchesColor = colorFilter.some((c) => {
+            // Match gray variants (gray, dark_gray, light_gray) when "gray" is selected
+            if (c === "gray") return shoeColor.includes("gray");
+            return shoeColor === c;
+        });
     }
 
     return matchesType && matchesColor;
@@ -734,7 +735,7 @@ function GridCanvas({
     transitionStartTime,
     interactive,
     filter = "all",
-    colorFilter = "all",
+    colorFilter = EMPTY_COLORS,
 }) {
     // Calculate filtered items and their new positions
     const { mappedItems, filteredGridDims } = useMemo(() => {
@@ -889,7 +890,7 @@ export default function ShoeGrid() {
 
     // Filter state for Nike collection
     const [nikeFilter, setNikeFilter] = useState("all"); // 'all' | 'jordan' | 'dunk'
-    const [colorFilter, setColorFilter] = useState("all"); // 'all' | 'blue' | 'red' | etc.
+    const [colorFilter, setColorFilter] = useState(EMPTY_COLORS); // [] = all, ['blue','green'] = blue OR green
 
     // --- Voice Assistant State ---
     const [voiceActive, setVoiceActive] = useState(false);
@@ -955,7 +956,7 @@ export default function ShoeGrid() {
         setActiveCollectionIdx(index);
         // Clear Nike filters when leaving Nike collection
         setNikeFilter("all");
-        setColorFilter("all");
+        setColorFilter(EMPTY_COLORS);
         rigState.target.set(0, 2, 0);
         rigState.activeId = null;
         // 3. Cleanup old layers after transition time
@@ -973,10 +974,9 @@ export default function ShoeGrid() {
         rigState.activeId = null;
     };
 
-    // Handle color filter change
-    const handleColorFilterChange = (color) => {
-        if (color === colorFilter) return;
-        setColorFilter(color);
+    // Handle color filter change (accepts array of colors)
+    const handleColorFilterChange = (colors) => {
+        setColorFilter(colors.length > 0 ? colors : EMPTY_COLORS);
         rigState.activeId = null;
     };
 
@@ -986,26 +986,28 @@ export default function ShoeGrid() {
             case "collection":
                 handleCollectionSwitch(cmd.value);
                 break;
-            case "filter":
-                // Only apply filter if on Nike collection
-                if (activeCollectionIdx === 0) {
-                    handleFilterChange(cmd.value);
-                    // "all" clears both type and color filters
-                    if (cmd.value === "all") {
-                        handleColorFilterChange("all");
+            case "filterShoes": {
+                // Only apply filters on Nike collection
+                if (activeCollectionIdx !== 0) break;
+                const { types, colors } = cmd.value;
+                const hasTypes = types !== undefined;
+                const hasColors = colors !== undefined;
+
+                if (!hasTypes && !hasColors) {
+                    // No params = clear all filters
+                    handleFilterChange("all");
+                    handleColorFilterChange([]);
+                } else {
+                    // Only update each filter if explicitly provided
+                    if (hasTypes) {
+                        handleFilterChange(types.length === 1 ? types[0] : "all");
+                    }
+                    if (hasColors) {
+                        handleColorFilterChange(colors);
                     }
                 }
                 break;
-            case "colorFilter":
-                // Only apply color filter if on Nike collection
-                if (activeCollectionIdx === 0) {
-                    handleColorFilterChange(cmd.value);
-                    // "all" clears both color and type filters
-                    if (cmd.value === "all") {
-                        handleFilterChange("all");
-                    }
-                }
-                break;
+            }
             case "zoom":
                 if (cmd.value === "in") {
                     setZoomTarget(CONFIG.zoomIn);
@@ -1017,9 +1019,33 @@ export default function ShoeGrid() {
                 // Reset everything: zoom out and clear all filters
                 setZoomTarget("OUT");
                 setNikeFilter("all");
-                setColorFilter("all");
+                setColorFilter(EMPTY_COLORS);
                 rigState.activeId = null;
                 break;
+            case "selectShoe": {
+                // Search for a shoe by name in the current collection
+                const searchTerm = cmd.value.toLowerCase();
+                const currentItems = collectionsData[activeCollectionIdx];
+                const foundIndex = currentItems.findIndex((shoe) =>
+                    shoe.title.toLowerCase().includes(searchTerm)
+                );
+                if (foundIndex !== -1) {
+                    const shoe = currentItems[foundIndex];
+                    // Calculate the shoe's position in the grid
+                    const spacing = CONFIG.itemSize + CONFIG.gap;
+                    const gridDims = calculateGridDimensions(currentItems.length);
+                    const col = foundIndex % CONFIG.gridCols;
+                    const row = Math.floor(foundIndex / CONFIG.gridCols);
+                    const shoeX = col * spacing - gridDims.width / 2 + spacing / 2;
+                    const shoeY = -(row * spacing) + gridDims.height / 2 - spacing / 2;
+                    // Center on the shoe and select it
+                    rigState.target.set(-shoeX, -shoeY, 0);
+                    rigState.activeId = foundIndex;
+                    rigState.zoom = CONFIG.zoomIn;
+                    setCurrentZoom(CONFIG.zoomIn);
+                }
+                break;
+            }
             default:
                 break;
         }
@@ -1081,10 +1107,6 @@ export default function ShoeGrid() {
         >
             <Leva collapsed={true} />
             <Header />
-            {/* <AgentMarquee
-                text={voice.transcript}
-                isActive={voiceActive}
-            /> */}
             <Canvas
                 camera={{ position: [0, 0, initialZoom], fov: 45 }}
                 dpr={[1, 2]}
@@ -1133,7 +1155,7 @@ export default function ShoeGrid() {
                             colorFilter={
                                 activeCollectionIdx === 0
                                     ? colorFilter
-                                    : "all"
+                                    : EMPTY_COLORS
                             }
                         />
                     ))}
