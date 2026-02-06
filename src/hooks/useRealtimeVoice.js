@@ -1,6 +1,6 @@
 import { useState, useRef, useCallback, useEffect } from "react";
 
-const SHOE_ASSISTANT_PROMPT = `You are a chill sneaker sales rep. Friendly, brief, helpful.
+const SHOE_ASSISTANT_PROMPT = `You are a chill sneaker sales rep with deep sneaker knowledge. You can SEE the shoe grid and know exactly what's showing.
 
 Collections: Nike (filterable by type and color), New Balance, Budget (under $150)
 
@@ -8,15 +8,27 @@ Nike types: Jordan, Dunk
 Nike colors: black, white, gray, red, orange, blue, green, purple, pink, yellow, teal
 
 You can combine filters: "blue Jordans", "red and black Dunks", "green and teal shoes"
-Multiple colors use OR logic: "blue and green" shows both blue AND green shoes.
+Multiple colors use OR logic: "blue and green" shows blue OR green shoes.
 
 You can select specific shoes by name: Travis Scott Dunks, Orange Lobster, Grey Fog, Panda, Powerpuff Girls Bubbles, Undefeated Dunks, various Jordan 1s/4s.
 
+CONTEXT AWARENESS:
+- Tool results tell you exactly what the user sees (shoe count, names, prices)
+- Reference specific shoe names from tool results when they're interesting
+- React to what's on screen like you can see it
+- If a notable shoe appears in results, mention it naturally
+
+PERSONALITY:
+- You have opinions. Some shoes are "heat", some are "classics", some are "slept on"
+- Be a knowledgeable friend, not a generic assistant
+- Show genuine enthusiasm for good picks
+
 RULES:
 - Use tools immediately for any request
-- MAX 5-6 words. Examples: "Here's the blue ones", "Jordans, nice choice", "Blue and green right here", "Travis Scotts right here"
+- MAX 5-6 words in your spoken response
+- Examples: "Travis Scotts in there too", "Those are heat honestly", "Good eye on those", "Solid collection right here"
 - Never use punctuation like question marks or exclamation points
-- Chill and confident tone`;
+- Chill and confident tone, like talking to a friend`;
 
 // Tool definitions for the AI
 const TOOLS = [
@@ -189,43 +201,44 @@ export function useRealtimeVoice({ systemPrompt, onCommand } = {}) {
     updateLevel();
   }, []);
 
-  // Execute tool and return result
+  // Execute tool and return result — onCommand returns context for richer AI responses
   const executeTool = useCallback((name, args) => {
     console.log(`[Tool Call] ${name}:`, args);
+
+    const dispatch = (cmd) => {
+      const ctx = onCommandRef.current?.(cmd);
+      return ctx?.message || null;
+    };
 
     switch (name) {
       case "switch_collection": {
         const collectionMap = { nike: 0, new_balance: 1, budget: 2 };
         const value = collectionMap[args.collection];
         if (value !== undefined) {
-          onCommandRef.current?.({ type: "collection", value });
-          return { success: true, message: `Switched to ${args.collection}` };
+          const msg = dispatch({ type: "collection", value });
+          return { success: true, message: msg || `Switched to ${args.collection}` };
         }
         return { success: false, message: "Unknown collection" };
       }
 
       case "filter_shoes": {
-        const parts = [];
-        if (args.types?.length) parts.push(`types: ${args.types.join(", ")}`);
-        if (args.colors?.length) parts.push(`colors: ${args.colors.join(", ")}`);
-        const msg = parts.length > 0 ? `Filtered by ${parts.join(" and ")}` : "Cleared all filters";
-        onCommandRef.current?.({ type: "filterShoes", value: { types: args.types, colors: args.colors } });
-        return { success: true, message: msg };
+        const msg = dispatch({ type: "filterShoes", value: { types: args.types, colors: args.colors } });
+        return { success: true, message: msg || "Filters applied" };
       }
 
       case "set_zoom": {
-        onCommandRef.current?.({ type: "zoom", value: args.level });
-        return { success: true, message: `Zoomed ${args.level}` };
+        const msg = dispatch({ type: "zoom", value: args.level });
+        return { success: true, message: msg || `Zoomed ${args.level}` };
       }
 
       case "go_back": {
-        onCommandRef.current?.({ type: "goBack" });
-        return { success: true, message: "Back to overview" };
+        const msg = dispatch({ type: "goBack" });
+        return { success: true, message: msg || "Back to overview" };
       }
 
       case "select_shoe": {
-        onCommandRef.current?.({ type: "selectShoe", value: args.search });
-        return { success: true, message: `Searching for ${args.search}` };
+        const msg = dispatch({ type: "selectShoe", value: args.search });
+        return { success: true, message: msg || `Searching for ${args.search}` };
       }
 
       default:
@@ -246,15 +259,16 @@ export function useRealtimeVoice({ systemPrompt, onCommand } = {}) {
 
           case "input_audio_buffer.speech_started":
             setStatus("listening");
-            setTranscript(""); // Clear previous response when user starts speaking
+            setTranscript("");
             break;
 
           case "input_audio_buffer.speech_stopped":
             setStatus("speaking");
+            setTranscript("...");
             break;
 
           case "response.audio_transcript.delta":
-            // Ignore streaming deltas - wait for final
+            // Wait for final transcript
             break;
 
           case "response.audio_transcript.done":
@@ -385,6 +399,21 @@ export function useRealtimeVoice({ systemPrompt, onCommand } = {}) {
           },
         };
         dataChannelRef.current.send(JSON.stringify(sessionUpdate));
+
+        // Proactive greeting — AI speaks first
+        setTimeout(() => {
+          if (dataChannelRef.current?.readyState === "open") {
+            dataChannelRef.current.send(
+              JSON.stringify({
+                type: "response.create",
+                response: {
+                  instructions:
+                    "The user just activated voice mode on a sneaker browsing site. They're viewing a grid of Nike shoes. Give a brief, welcoming greeting. Remember: MAX 5-6 words, chill tone, no punctuation.",
+                },
+              })
+            );
+          }
+        }, 300);
       };
 
       const offer = await peerConnectionRef.current.createOffer();

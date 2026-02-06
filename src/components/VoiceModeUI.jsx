@@ -1,5 +1,5 @@
 import React from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
 /**
  * AudioWaveform - Real-time bars visualization for voice activity
@@ -256,6 +256,85 @@ export function VoiceCloseButton({ onClick }) {
         <line x1="6" y1="6" x2="18" y2="18" />
       </svg>
     </motion.button>
+  );
+}
+
+/**
+ * VoiceTranscript - Floating glassmorphic display for AI responses
+ * Pure presentational component — parent manages visibility and text.
+ */
+export function VoiceTranscript({ text, visible }) {
+  return (
+    <AnimatePresence>
+      {visible && (
+        <motion.div
+          key="transcript-container"
+          initial={{ opacity: 0, y: 16, scale: 0.95, filter: "blur(8px)" }}
+          animate={{ opacity: 1, y: 0, scale: 1, filter: "blur(0px)" }}
+          exit={{ opacity: 0, y: 8, scale: 0.98, filter: "blur(4px)" }}
+          transition={{
+            type: "spring",
+            stiffness: 500,
+            damping: 30,
+            mass: 1,
+            opacity: { duration: 0.2 },
+          }}
+          style={{
+            position: "fixed",
+            bottom: "105px",
+            left: 0,
+            right: 0,
+            display: "flex",
+            justifyContent: "center",
+            zIndex: 101,
+            pointerEvents: "none",
+          }}
+        >
+          <motion.div
+            layout
+            transition={{
+              type: "spring",
+              stiffness: 500,
+              damping: 30,
+            }}
+            style={{
+              background:
+                "linear-gradient(135deg, rgba(255, 240, 235, 0.35) 0%, rgba(255, 255, 255, 0.25) 50%, rgba(245, 235, 255, 0.35) 100%)",
+              backdropFilter: "blur(40px) saturate(200%)",
+              WebkitBackdropFilter: "blur(40px) saturate(200%)",
+              borderRadius: "24px",
+              border: "1px solid rgba(255, 255, 255, 0.35)",
+              boxShadow:
+                "0 8px 32px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.5), 0 0 0 0.5px rgba(0, 0, 0, 0.03)",
+              padding: "10px 20px",
+              maxWidth: "360px",
+              overflow: "hidden",
+            }}
+          >
+            <AnimatePresence mode="wait">
+              <motion.p
+                key={text}
+                initial={{ opacity: 0, filter: "blur(4px)" }}
+                animate={{ opacity: 1, filter: "blur(0px)" }}
+                exit={{ opacity: 0, filter: "blur(4px)" }}
+                transition={{ duration: 0.15 }}
+                style={{
+                  margin: 0,
+                  fontSize: "13px",
+                  fontWeight: "500",
+                  color: "#555",
+                  textAlign: "center",
+                  lineHeight: "1.4",
+                  letterSpacing: "-0.01em",
+                }}
+              >
+                {text}
+              </motion.p>
+            </AnimatePresence>
+          </motion.div>
+        </motion.div>
+      )}
+    </AnimatePresence>
   );
 }
 
