@@ -1,13 +1,6 @@
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { CONFIG } from "./useGridConfig";
-import {
-  AudioWaveform,
-  VoicePulse,
-  MicButton,
-  VoiceCloseButton,
-} from "./VoiceModeUI";
-
 // 1. THE PHYSICS
 // High stiffness, moderate damping = "Snappy but smooth" (Apple feel)
 const islandTransition = {
@@ -25,8 +18,6 @@ export function UnifiedControlBar({
   hasActiveSelection,
   nikeFilter,
   onFilterChange,
-  voiceMode,
-  onVoiceModeToggle,
 }) {
   const collections = [
     "Nike",
@@ -87,43 +78,7 @@ export function UnifiedControlBar({
           so the container can instantly shrink/grow to the new content's size.
         */}
         <AnimatePresence mode="popLayout" initial={false}>
-          {voiceMode?.isActive ? (
-            /* ---------------- STATE 0: VOICE MODE (Highest Priority) ---------------- */
-            <motion.div
-              key="voice-mode"
-              initial={{
-                opacity: 0,
-                scale: 0.5,
-                filter: "blur(8px)",
-              }}
-              animate={{
-                opacity: 1,
-                scale: 1,
-                filter: "blur(0px)",
-              }}
-              exit={{
-                opacity: 0,
-                scale: 0.5,
-                filter: "blur(8px)",
-              }}
-              transition={{
-                ...islandTransition,
-                opacity: { duration: 0.2 },
-              }}
-              style={{
-                display: "flex",
-                alignItems: "center",
-                gap: "12px",
-                padding: "0 8px",
-              }}
-            >
-              <VoiceCloseButton onClick={onVoiceModeToggle} />
-              <VoicePulse status={voiceMode.status} />
-              {voiceMode.status === "listening" && (
-                <AudioWaveform level={voiceMode.audioLevel} barCount={5} />
-              )}
-            </motion.div>
-          ) : hasActiveSelection ? (
+          {hasActiveSelection ? (
             /* ---------------- STATE 1: BUY NOW (Active Selection) ---------------- */
             <motion.button
               key="buy-now-mode"
@@ -308,21 +263,6 @@ export function UnifiedControlBar({
                 </div>
               )}
 
-              {/* Vertical Divider before mic button */}
-              <motion.div
-                layout
-                initial={{ opacity: 0, height: 0 }}
-                animate={{ opacity: 1, height: "24px" }}
-                transition={{ delay: 0.1 }}
-                style={{
-                  width: "1px",
-                  background: "rgba(0,0,0,0.08)",
-                  margin: "0 2px",
-                  boxShadow: "0 0 1px rgba(255, 255, 255, 0.3)",
-                }}
-              />
-
-              <MicButton onClick={onVoiceModeToggle} />
             </motion.div>
           )}
         </AnimatePresence>
@@ -330,7 +270,7 @@ export function UnifiedControlBar({
 
       {/* Mobile Nike Filters - appears above main bar */}
       <AnimatePresence>
-        {currentCollection === 0 && !isZoomedIn && !hasActiveSelection && !voiceMode?.isActive && (
+        {currentCollection === 0 && !isZoomedIn && !hasActiveSelection && (
           <motion.div
             className="mobile-filters"
             initial={{ opacity: 0, y: 20 }}

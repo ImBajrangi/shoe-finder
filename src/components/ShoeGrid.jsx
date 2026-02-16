@@ -30,8 +30,6 @@ import { UnifiedControlBar } from "./GridUI";
 import { CloseButton } from "./CloseButton";
 import Header from "./Header";
 import { TechBackground } from "./TechBackground";
-import { useRealtimeVoice } from "../hooks/useRealtimeVoice";
-import { VoiceTranscript } from "./VoiceModeUI";
 import "./HoloCardMaterial"; // Registers <holoCardMaterial /> with R3F
 
 // --- PRELOAD ALL TEXTURES ---
@@ -893,9 +891,6 @@ export default function ShoeGrid() {
     const [nikeFilter, setNikeFilter] = useState("all"); // 'all' | 'jordan' | 'dunk'
     const [colorFilter, setColorFilter] = useState(EMPTY_COLORS); // [] = all, ['blue','green'] = blue OR green
 
-    // --- Voice Assistant State ---
-    const [voiceActive, setVoiceActive] = useState(false);
-
     // Collections - Nike (all, unfiltered), New Balance, Under $150
     const collectionsData = useMemo(() => {
         // All Nike shoes (filtering happens in GridCanvas)
@@ -979,165 +974,6 @@ export default function ShoeGrid() {
     const handleColorFilterChange = (colors) => {
         setColorFilter(colors.length > 0 ? colors : EMPTY_COLORS);
         rigState.activeId = null;
-    };
-
-    // Helper: get short display names from shoe titles
-    const shortName = (title) =>
-        title.replace(/^Nike (Dunk|Air Jordan) (Low|High|Mid|Retro|1|4) /i, "").replace(/['']/g, "");
-
-    // Helper: pick notable shoes from a list (shorter, interesting names first)
-    const pickNotable = (items, max = 3) =>
-        items
-            .map((s) => shortName(s.title))
-            .filter((n) => n.length < 30)
-            .slice(0, max);
-
-    // Helper: compute a shoe's visual position in the current (possibly filtered) grid
-    const getFilteredShoePosition = (items, originalIndex, typeFilter, colFilter) => {
-        const effectiveColors = colFilter.length > 0 ? colFilter : EMPTY_COLORS;
-        // Count how many filtered items appear before this one
-        let filteredIdx = 0;
-        for (let i = 0; i < originalIndex; i++) {
-            if (matchesFilter(items[i], typeFilter, effectiveColors)) filteredIdx++;
-        }
-        const filteredCount = items.filter((item) =>
-            matchesFilter(item, typeFilter, effectiveColors)
-        ).length;
-        const spacing = CONFIG.itemSize + CONFIG.gap;
-        const gridDims = calculateGridDimensions(filteredCount);
-        const col = filteredIdx % CONFIG.gridCols;
-        const row = Math.floor(filteredIdx / CONFIG.gridCols);
-        return {
-            x: col * spacing - gridDims.width / 2 + spacing / 2,
-            y: -(row * spacing) + gridDims.height / 2 - spacing / 2,
-        };
-    };
-
-    // Voice command handler - returns context objects for AI tool results
-    const handleVoiceCommand = (cmd) => {
-        const collectionNames = ["Nike", "New Balance", "Budget"];
-
-        switch (cmd.type) {
-            case "collection": {
-                handleCollectionSwitch(cmd.value);
-                const name = collectionNames[cmd.value];
-                const count = collectionsData[cmd.value].length;
-                return { message: `Switched to ${name} collection. ${count} shoes to browse.` };
-            }
-            case "filterShoes": {
-                // Only apply filters on Nike collection
-                if (activeCollectionIdx !== 0) return { message: "Filters only work on Nike collection." };
-                const { types, colors } = cmd.value;
-                const hasTypes = types !== undefined;
-                const hasColors = colors !== undefined;
-
-                let newType = nikeFilter;
-                let newColors = colorFilter;
-
-                if (!hasTypes && !hasColors) {
-                    newType = "all";
-                    newColors = [];
-                    handleFilterChange("all");
-                    handleColorFilterChange([]);
-                } else {
-                    if (hasTypes) {
-                        newType = types.length === 1 ? types[0] : "all";
-                        handleFilterChange(newType);
-                    }
-                    if (hasColors) {
-                        newColors = colors;
-                        handleColorFilterChange(colors);
-                    }
-                }
-
-                // Compute what the user will see
-                const allItems = collectionsData[0];
-                const effectiveColors = newColors.length > 0 ? newColors : EMPTY_COLORS;
-                const filtered = allItems.filter((item) =>
-                    matchesFilter(item, newType, effectiveColors)
-                );
-
-                // Auto-select if exactly one result
-                if (filtered.length === 1) {
-                    const shoe = filtered[0];
-                    const originalIndex = allItems.indexOf(shoe);
-                    const pos = getFilteredShoePosition(allItems, originalIndex, newType, effectiveColors);
-                    rigState.target.set(-pos.x, -pos.y, 0);
-                    rigState.activeId = originalIndex;
-                    rigState.zoom = CONFIG.zoomIn;
-                    setCurrentZoom(CONFIG.zoomIn);
-                    return { message: `Found 1 shoe: ${shoe.title}. Price: ${shoe.price || "N/A"}.` };
-                }
-
-                const notable = pickNotable(filtered);
-                const notableStr = notable.length > 0 ? ` Highlights: ${notable.join(", ")}.` : "";
-                return { message: `Showing ${filtered.length} shoes.${notableStr}` };
-            }
-            case "zoom":
-                if (cmd.value === "in") {
-                    setZoomTarget(CONFIG.zoomIn);
-                } else if (cmd.value === "out") {
-                    setZoomTarget("OUT");
-                }
-                return { message: `Zoomed ${cmd.value}.` };
-            case "goBack": {
-                // Reset everything: zoom out and clear all filters
-                setZoomTarget("OUT");
-                setNikeFilter("all");
-                setColorFilter(EMPTY_COLORS);
-                rigState.activeId = null;
-                const count = collectionsData[activeCollectionIdx].length;
-                return { message: `Reset to overview. Showing all ${count} shoes.` };
-            }
-            case "selectShoe": {
-                // Search for a shoe by name in the current collection
-                const searchTerm = cmd.value.toLowerCase();
-                const currentItems = collectionsData[activeCollectionIdx];
-                const foundIndex = currentItems.findIndex((shoe) =>
-                    shoe.title.toLowerCase().includes(searchTerm)
-                );
-                if (foundIndex !== -1) {
-                    const shoe = currentItems[foundIndex];
-                    // Calculate position in the filtered grid (accounts for active filters)
-                    const typeFilter = activeCollectionIdx === 0 ? nikeFilter : "all";
-                    const colFilter = activeCollectionIdx === 0 ? colorFilter : EMPTY_COLORS;
-                    const pos = getFilteredShoePosition(currentItems, foundIndex, typeFilter, colFilter);
-                    rigState.target.set(-pos.x, -pos.y, 0);
-                    rigState.activeId = foundIndex;
-                    rigState.zoom = CONFIG.zoomIn;
-                    setCurrentZoom(CONFIG.zoomIn);
-                    return { message: `Selected: ${shoe.title}. Price: ${shoe.price || "N/A"}.` };
-                }
-                return { message: `No shoe found matching "${cmd.value}".` };
-            }
-            default:
-                return { message: "Done." };
-        }
-    };
-
-    // Voice assistant hook
-    const voice = useRealtimeVoice({
-        onCommand: handleVoiceCommand,
-    });
-
-    // Transcript display — persists until replaced by new message or voice deactivation
-    const [transcriptDisplay, setTranscriptDisplay] = useState(null);
-    useEffect(() => {
-        if (voice.transcript && voiceActive) {
-            setTranscriptDisplay(voice.transcript);
-        }
-        if (!voiceActive) setTranscriptDisplay(null);
-    }, [voice.transcript, voiceActive]);
-
-    // Toggle voice mode
-    const handleVoiceModeToggle = () => {
-        if (voiceActive) {
-            voice.endSession();
-            setVoiceActive(false);
-        } else {
-            voice.startSession();
-            setVoiceActive(true);
-        }
     };
 
     useEffect(() => {
@@ -1249,21 +1085,6 @@ export default function ShoeGrid() {
                 hasActiveSelection={hasActiveSelection}
                 nikeFilter={nikeFilter}
                 onFilterChange={handleFilterChange}
-                voiceMode={
-                    voiceActive
-                        ? {
-                            isActive: true,
-                            status: voice.status,
-                            transcript: voice.transcript,
-                            audioLevel: voice.audioLevel,
-                        }
-                        : null
-                }
-                onVoiceModeToggle={handleVoiceModeToggle}
-            />
-            <VoiceTranscript
-                text={transcriptDisplay}
-                visible={voiceActive && !!transcriptDisplay}
             />
         </div>
     );
