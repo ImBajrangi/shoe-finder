@@ -24,52 +24,11 @@ Next.js 16 app using Pages Router with a custom shadcn-style component library.
 - **glslify** for GLSL shader imports (requires webpack mode)
 - **Sonner** for toasts
 
-### Component Library (`src/components/ui/`)
-
-All components follow shadcn patterns: Radix primitives + Tailwind + `cva` for variants.
-
-**Barrel export:** Import from `@/components/ui` (see `index.js`)
-
-**Key components:** Accordion, AlertDialog, Avatar, Badge, Button, Checkbox, Chip, Drawer, Separator, Sidebar, Spinner, Tooltip, Toaster
-
 ### Shaders (`src/shaders/`)
 
 GLSL shaders use glslify for modular imports. Import noise functions with:
 ```glsl
 #pragma glslify: snoise = require('glsl-noise/simplex/2d')
-```
-
-### Utilities
-
-`src/lib/utils.js` exports `cn()` - merges Tailwind classes using `clsx` + `tailwind-merge`.
-
-## Code Style
-
-### Tailwind Classes
-
-For long class strings, use array syntax with `cn()` for readability:
-
-```jsx
-className={cn(
-  "base classes here",
-  "hover and focus states",
-  "responsive modifiers",
-  className
-)}
-```
-
-### Component Variants
-
-Use `cva` from `class-variance-authority` for variant-based styling:
-
-```jsx
-const buttonVariants = cva("base-classes", {
-  variants: {
-    variant: { default: "...", secondary: "..." },
-    size: { default: "...", sm: "...", lg: "..." }
-  },
-  defaultVariants: { variant: "default", size: "default" }
-});
 ```
 
 ## Notes
