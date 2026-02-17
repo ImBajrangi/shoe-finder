@@ -1,7 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import { Html } from "@react-three/drei";
 import { useThree } from "@react-three/fiber";
-import { X } from "lucide-react";
 
 export function CloseButton({
   isActive,
@@ -113,11 +112,19 @@ export function CloseButton({
           }
         }}
       >
-        <X
-          size={14}
-          color="rgba(0, 0, 0, 0.8)"
-          strokeWidth={2}
-        />
+        <svg
+          width="14"
+          height="14"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="rgba(0, 0, 0, 0.8)"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
       </button>
     </Html>
   );

@@ -1,16 +1,15 @@
-# Next.js Component Library Boilerplate
+# Shoe Finder
 
-A modern Next.js starter with a custom shadcn-style component library, 3D capabilities, and animations.
+A 3D shoe browsing experience built with React Three Fiber. Explore collections of sneakers in an interactive grid with smooth animations, filtering, and zoom controls.
 
 ## Stack
 
 - **Next.js 16** (Pages Router)
 - **React 19**
+- **React Three Fiber + Drei** — 3D rendering and helpers
+- **Framer Motion** — UI animations (Dynamic Island control bar)
 - **Tailwind CSS v4**
-- **Radix UI** primitives
-- **Motion** (Framer Motion)
-- **React Three Fiber + Drei**
-- **Sonner** (toasts)
+- **Leva** — debug controls
 
 ## Getting Started
 
@@ -19,7 +18,7 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) to see the component showcase.
+Open [http://localhost:3000](http://localhost:3000).
 
 ## Scripts
 
@@ -28,49 +27,25 @@ Open [http://localhost:3000](http://localhost:3000) to see the component showcas
 | `npm run dev` | Start development server |
 | `npm run build` | Production build |
 | `npm run lint` | Run ESLint |
-| `npm run format` | Format with Prettier (auto-sorts Tailwind) |
-
-## Component Library
-
-All components live in `src/components/ui/` and follow shadcn patterns.
-
-```jsx
-import { Button, Badge, Tooltip } from "@/components/ui";
-```
-
-### Available Components
-
-- **Layout:** Sidebar, Separator
-- **Feedback:** Spinner, Toaster (Sonner), AlertDialog
-- **Inputs:** Button, Checkbox
-- **Display:** Avatar, Badge, Chip, Accordion, Tooltip
-- **Overlay:** Drawer
-
-### Creating Components
-
-Use `cn()` for class merging and `cva` for variants:
-
-```jsx
-import { cn } from "@/lib/utils";
-import { cva } from "class-variance-authority";
-
-const variants = cva("base-classes", {
-  variants: {
-    size: { sm: "text-sm", lg: "text-lg" }
-  }
-});
-
-export function MyComponent({ size, className }) {
-  return <div className={cn(variants({ size }), className)} />;
-}
-```
+| `npm run format` | Format with Prettier |
 
 ## Project Structure
 
 ```
 src/
-├── components/ui/    # Component library
-├── lib/utils.js      # cn() utility
-├── pages/            # Next.js pages
-└── styles/           # Global CSS + Tailwind theme
+├── components/
+│   ├── grid/              # 3D grid internals
+│   │   ├── ShoeGrid.jsx   # Main orchestrator
+│   │   ├── ShoeTile.jsx   # Individual 3D shoe tile
+│   │   ├── GridCanvas.jsx # Grid layout + time-sliced mounting
+│   │   ├── Rig.jsx        # Camera controls (drag/zoom)
+│   │   ├── gridState.js   # Shared state + helpers
+│   │   └── gridConfig.js  # Grid configuration
+│   ├── GridUI.jsx         # Dynamic Island control bar
+│   ├── MiniMap.jsx        # Navigation minimap
+│   ├── Header.jsx         # Top header
+│   └── CloseButton.jsx    # 3D close button overlay
+├── pages/
+│   └── index.js           # Entry point
+└── styles/                # Global CSS
 ```

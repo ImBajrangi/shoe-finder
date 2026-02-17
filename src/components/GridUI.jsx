@@ -1,6 +1,6 @@
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { CONFIG } from "./useGridConfig";
+import { CONFIG } from "./grid/gridConfig";
 // 1. THE PHYSICS
 // High stiffness, moderate damping = "Snappy but smooth" (Apple feel)
 const islandTransition = {
@@ -103,7 +103,6 @@ export function UnifiedControlBar({
               }}
               onClick={() => {
                 // Handle buy now action
-                console.log("Buy Now clicked");
               }}
               style={{
                 background: "#000",

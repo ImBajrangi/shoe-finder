@@ -2,7 +2,7 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 
 // Dynamic import to avoid SSR issues with R3F
-const ShoeGrid = dynamic(() => import("@/components/ShoeGrid"), {
+const ShoeGrid = dynamic(() => import("@/components/grid/ShoeGrid"), {
   ssr: false,
 });
 

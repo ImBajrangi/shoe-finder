@@ -23,7 +23,7 @@ const TopographyMaterial = shaderMaterial(
 
 extend({ TopographyMaterial });
 
-export function TechBackground({
+export function TopologyBackground({
   isZoomedIn = false,
   quality = 1,
   color = "#e0e0e0",
