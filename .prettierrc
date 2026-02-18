@@ -8,7 +8,5 @@
     "prettier-plugin-classnames",
     "prettier-plugin-tailwindcss",
     "prettier-plugin-merge"
-  ],
-  "tailwindFunctions": ["cn", "cva"],
-  "customFunctions": ["cn", "cva"]
+  ]
 }
