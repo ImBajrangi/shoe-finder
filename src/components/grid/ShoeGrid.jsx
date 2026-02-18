@@ -204,7 +204,7 @@ export default function ShoeGrid() {
                 touchAction: "none", // Prevent mobile browser touch gestures
             }}
         >
-            <Leva collapsed={true} />
+            <Leva collapsed={true} hidden={false} />
             <Header />
             <Canvas
                 camera={{ position: [0, 0, initialZoom], fov: 45 }}
