@@ -77,43 +77,29 @@ export default function ShoeGrid() {
         return () => window.removeEventListener("resize", updateResponsiveZoom);
     }, []);
 
-    // Filter state for Nike collection
-    const [nikeFilter, setNikeFilter] = useState("all"); // 'all' | 'jordan' | 'dunk'
+    // Filter state for Art collection
+    const [artFilter, setArtFilter] = useState("all"); // 'all' | 'architecture' | 'spiritual'
     const [colorFilter, setColorFilter] = useState(EMPTY_COLORS); // [] = all, ['blue','green'] = blue OR green
 
-    // Collections - Nike (all, unfiltered), New Balance, Under $150
+    // Collections - Featured Art, Sacred Temples, Divine Portraits
     const collectionsData = useMemo(() => {
-        // All Nike shoes (filtering happens in GridCanvas)
-        const nike = shoes.filter((s) => s.brand === "Nike");
-        // New Balance shoes - take half and double to make 30+ items
-        const newBalanceFull = shoes.filter(
-            (s) => s.brand === "New Balance"
-        );
-        const newBalanceHalf = newBalanceFull.slice(0, Math.ceil(newBalanceFull.length / 2));
-        const newBalance = [
-            ...newBalanceHalf,
-            ...newBalanceHalf.map((s, i) => ({
-                ...s,
-                product_url: `${s.product_url}-dup-${i}`,
-            })),
-        ];
-        // Under $150 (all brands)
-        const budget = shoes.filter((s) => {
-            const price = parseInt(
-                s.price?.replace(/[$,]/g, "") || "999"
-            );
-            return price < 150;
-        });
-        return [nike, newBalance, budget];
+        // Featured Art
+        const featured = shoes.filter((s) => s.brand === "Featured Art");
+        // Sacred Temples
+        const temples = shoes.filter((s) => s.brand === "Sacred Temples");
+        // Divine Portraits
+        const portraits = shoes.filter((s) => s.brand === "Divine Portraits");
+        
+        return [featured, temples, portraits];
     }, []);
     // --- Grid Stack State ---
     // Instead of one list of items, we keep a stack of "Rendered Layers".
     // This allows us to have one layer exiting and one layer entering simultaneously.
-    // Initial grid uses Nike collection (index 0)
+    // Initial grid uses Featured collection (index 0)
     const [gridLayers, setGridLayers] = useState(() => [
         {
             id: "init",
-            items: shoes.filter((s) => s.brand === "Nike"),
+            items: shoes.filter((s) => s.brand === "Featured Art"),
             mode: "enter", // 'enter' | 'exit'
             startTime: 0,
         },
@@ -140,8 +126,8 @@ export default function ShoeGrid() {
             return [...exitingLayers, newLayer];
         });
         setActiveCollectionIdx(index);
-        // Clear Nike filters when leaving Nike collection
-        setNikeFilter("all");
+        // Clear Art filters when leaving collection
+        setArtFilter("all");
         setColorFilter(EMPTY_COLORS);
         rigState.target.set(0, 2, 0);
         rigState.activeId = null;
@@ -152,11 +138,11 @@ export default function ShoeGrid() {
             );
         }, CONFIG.cleanupTimeout);
     };
-    // Handle filter change (for Nike collection) - just update filter state
+    // Handle filter change (for Featured collection) - just update filter state
     // The grid will animate items in place
     const handleFilterChange = (filter) => {
-        if (filter === nikeFilter) return;
-        setNikeFilter(filter);
+        if (filter === artFilter) return;
+        setArtFilter(filter);
         rigState.activeId = null;
     };
 
@@ -180,14 +166,14 @@ export default function ShoeGrid() {
     // Determine active grid dimensions for the Rig
     // We use the dimensions of the LAST layer (the incoming one)
     const activeLayer = gridLayers[gridLayers.length - 1];
-    // Calculate filtered item count for Nike collection
+    // Calculate filtered item count for Art collection
     const filteredItemCount = useMemo(() => {
         if (activeCollectionIdx !== 0)
             return activeLayer.items.length;
         return activeLayer.items.filter((item) =>
-            matchesFilter(item, nikeFilter, colorFilter)
+            matchesFilter(item, artFilter, colorFilter)
         ).length;
-    }, [activeLayer.items, activeCollectionIdx, nikeFilter, colorFilter]);
+    }, [activeLayer.items, activeCollectionIdx, artFilter, colorFilter]);
 
     const activeDims = calculateGridDimensions(
         filteredItemCount
@@ -248,7 +234,7 @@ export default function ShoeGrid() {
                             interactive={layer.mode === "enter"} // Only entering grid is clickable
                             filter={
                                 activeCollectionIdx === 0
-                                    ? nikeFilter
+                                    ? artFilter
                                     : "all"
                             }
                             colorFilter={
@@ -273,7 +259,7 @@ export default function ShoeGrid() {
                 setZoomTrigger={setZoomTarget}
                 isZoomedIn={isZoomedIn}
                 hasActiveSelection={hasActiveSelection}
-                nikeFilter={nikeFilter}
+                artFilter={artFilter}
                 onFilterChange={handleFilterChange}
             />
         </div>

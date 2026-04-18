@@ -10,8 +10,8 @@ export default function HomePage() {
   return (
     <>
       <Head>
-        <title>Shoe Finder</title>
-        <meta name="description" content="Explore our endless collection of sneakers" />
+        <title>Vrindopnishad | Divine Art Gallery</title>
+        <meta name="description" content="Explore an immersive 3D gallery of sacred spiritual masterpieces from Braj and beyond." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

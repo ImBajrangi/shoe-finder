@@ -52,7 +52,7 @@ export default function Header() {
                 textTransform: "uppercase",
               }}
             >
-              PERFECT
+              VRINDO
             </span>
             <span
               style={{
@@ -65,7 +65,7 @@ export default function Header() {
                 textTransform: "uppercase",
               }}
             >
-              PAIR
+              PNISHAD
             </span>
           </div>
           <span
@@ -80,7 +80,7 @@ export default function Header() {
               marginTop: "-1px",
             }}
           >
-            Est. 2026
+            Divine Art Studio
           </span>
         </div>
       </div>
@@ -95,10 +95,10 @@ export default function Header() {
           pointerEvents: "auto",
         }}
       >
-        <NavItem label="BROWSE" number="01" />
-        <NavItem label="COLLECT" number="02" />
+        <NavItem label="GALLERY" number="01" />
+        <NavItem label="DIVINE" number="02" />
         <Divider />
-        <QuoteText text="FOOTWEAR" />
+        <QuoteText text="SPIRITUAL ART" />
       </div>
 
       {/* Mobile responsive styles */}

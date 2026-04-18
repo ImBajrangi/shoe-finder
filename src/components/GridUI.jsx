@@ -1,6 +1,8 @@
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { CONFIG } from "./grid/gridConfig";
+import shoes from "../../backend/shoes.json";
+import { rigState } from "./grid/gridState";
 // 1. THE PHYSICS
 // High stiffness, moderate damping = "Snappy but smooth" (Apple feel)
 const islandTransition = {
@@ -16,19 +18,19 @@ export function UnifiedControlBar({
   setZoomTrigger,
   isZoomedIn,
   hasActiveSelection,
-  nikeFilter,
+  artFilter,
   onFilterChange,
 }) {
   const collections = [
-    "Nike",
-    "New Balance",
-    "Under $150",
+    "Featured Art",
+    "Sacred Temples",
+    "Divine Portraits",
   ];
 
-  const nikeFilters = [
+  const artFilters = [
     { id: "all", label: "All" },
-    { id: "jordan", label: "Jordan" },
-    { id: "dunk", label: "Dunk" },
+    { id: "architecture", label: "Architecture" },
+    { id: "spiritual", label: "Spiritual" },
   ];
 
   return (
@@ -101,8 +103,24 @@ export function UnifiedControlBar({
                 ...islandTransition,
                 opacity: { duration: 0.2 },
               }}
-              onClick={() => {
-                // Handle buy now action
+               onClick={() => {
+                // Retrieve the active art piece data from global state if needed
+                // For now, trigger a global CustomEvent that V_Cart listens to
+                const activeId = rigState.activeId;
+                const items = shoes; // Accessing the imported shoes data
+                const selectedItem = items[activeId];
+                
+                if (selectedItem) {
+                    window.dispatchEvent(new CustomEvent('V_ADD_TO_CART', {
+                        detail: {
+                            id: selectedItem.id || `art-${activeId}`,
+                            title: selectedItem.title,
+                            price: selectedItem.price,
+                            image: selectedItem.image_url
+                        }
+                    }));
+                    alert(`${selectedItem.title} added to Divine Collection!`);
+                }
               }}
               style={{
                 background: "#000",
@@ -222,7 +240,7 @@ export function UnifiedControlBar({
                 })}
               </div>
 
-              {/* Nike Filters - only show when Nike collection is active (desktop only) */}
+              {/* Art Filters - only show when Featured Art collection is active (desktop only) */}
               {currentCollection === 0 && (
                 <div className="desktop-filters">
                   {/* Vertical Divider */}
@@ -248,10 +266,10 @@ export function UnifiedControlBar({
                     transition={islandTransition}
                     style={{ display: "flex", gap: "4px" }}
                   >
-                    {nikeFilters.map((filter) => (
+                    {artFilters.map((filter) => (
                       <FilterChip
                         key={filter.id}
-                        isActive={nikeFilter === filter.id}
+                        isActive={artFilter === filter.id}
                         onClick={() => onFilterChange(filter.id)}
                         layoutGroup="desktop"
                       >
@@ -267,7 +285,7 @@ export function UnifiedControlBar({
         </AnimatePresence>
       </motion.div>
 
-      {/* Mobile Nike Filters - appears above main bar */}
+      {/* Mobile Art Filters - appears above main bar */}
       <AnimatePresence>
         {currentCollection === 0 && !isZoomedIn && !hasActiveSelection && (
           <motion.div
@@ -301,10 +319,10 @@ export function UnifiedControlBar({
                 pointerEvents: "auto",
               }}
             >
-              {nikeFilters.map((filter) => (
+              {artFilters.map((filter) => (
                 <FilterChip
                   key={`mobile-${filter.id}`}
-                  isActive={nikeFilter === filter.id}
+                  isActive={artFilter === filter.id}
                   onClick={() => onFilterChange(filter.id)}
                   layoutGroup="mobile"
                 >
