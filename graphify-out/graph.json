@@ -1,0 +1,1463 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "eslint.config.mjs",
+      "file_type": "code",
+      "source_file": "eslint.config.mjs",
+      "source_location": "L1",
+      "id": "eslint_config",
+      "community": 9,
+      "norm_label": "eslint.config.mjs"
+    },
+    {
+      "label": "eslintConfig",
+      "file_type": "code",
+      "source_file": "eslint.config.mjs",
+      "source_location": "L4",
+      "id": "eslint_config_eslintconfig",
+      "community": 9,
+      "norm_label": "eslintconfig"
+    },
+    {
+      "label": "next.config.mjs",
+      "file_type": "code",
+      "source_file": "next.config.mjs",
+      "source_location": "L1",
+      "id": "next_config",
+      "community": 10,
+      "norm_label": "next.config.mjs"
+    },
+    {
+      "label": "nextConfig",
+      "file_type": "code",
+      "source_file": "next.config.mjs",
+      "source_location": "L2",
+      "id": "next_config_nextconfig",
+      "community": 10,
+      "norm_label": "nextconfig"
+    },
+    {
+      "label": "postcss.config.mjs",
+      "file_type": "code",
+      "source_file": "postcss.config.mjs",
+      "source_location": "L1",
+      "id": "postcss_config",
+      "community": 12,
+      "norm_label": "postcss.config.mjs"
+    },
+    {
+      "label": "config",
+      "file_type": "code",
+      "source_file": "postcss.config.mjs",
+      "source_location": "L1",
+      "id": "postcss_config_config",
+      "community": 12,
+      "norm_label": "config"
+    },
+    {
+      "label": "CloseButton.jsx",
+      "file_type": "code",
+      "source_file": "src/components/CloseButton.jsx",
+      "source_location": "L1",
+      "id": "components_closebutton",
+      "community": 1,
+      "norm_label": "closebutton.jsx"
+    },
+    {
+      "label": "CloseButton()",
+      "file_type": "code",
+      "source_file": "src/components/CloseButton.jsx",
+      "source_location": "L5",
+      "id": "components_closebutton_closebutton",
+      "community": 1,
+      "norm_label": "closebutton()"
+    },
+    {
+      "label": "GridUI.jsx",
+      "file_type": "code",
+      "source_file": "src/components/GridUI.jsx",
+      "source_location": "L1",
+      "id": "components_gridui",
+      "community": 2,
+      "norm_label": "gridui.jsx"
+    },
+    {
+      "label": "islandTransition",
+      "file_type": "code",
+      "source_file": "src/components/GridUI.jsx",
+      "source_location": "L8",
+      "id": "components_gridui_islandtransition",
+      "community": 2,
+      "norm_label": "islandtransition"
+    },
+    {
+      "label": "UnifiedControlBar()",
+      "file_type": "code",
+      "source_file": "src/components/GridUI.jsx",
+      "source_location": "L15",
+      "id": "components_gridui_unifiedcontrolbar",
+      "community": 2,
+      "norm_label": "unifiedcontrolbar()"
+    },
+    {
+      "label": "ControlButton()",
+      "file_type": "code",
+      "source_file": "src/components/GridUI.jsx",
+      "source_location": "L409",
+      "id": "components_gridui_controlbutton",
+      "community": 2,
+      "norm_label": "controlbutton()"
+    },
+    {
+      "label": "TabButton()",
+      "file_type": "code",
+      "source_file": "src/components/GridUI.jsx",
+      "source_location": "L469",
+      "id": "components_gridui_tabbutton",
+      "community": 2,
+      "norm_label": "tabbutton()"
+    },
+    {
+      "label": "FilterChip()",
+      "file_type": "code",
+      "source_file": "src/components/GridUI.jsx",
+      "source_location": "L513",
+      "id": "components_gridui_filterchip",
+      "community": 2,
+      "norm_label": "filterchip()"
+    },
+    {
+      "label": "Header.jsx",
+      "file_type": "code",
+      "source_file": "src/components/Header.jsx",
+      "source_location": "L1",
+      "id": "components_header",
+      "community": 4,
+      "norm_label": "header.jsx"
+    },
+    {
+      "label": "Header()",
+      "file_type": "code",
+      "source_file": "src/components/Header.jsx",
+      "source_location": "L3",
+      "id": "components_header_header",
+      "community": 4,
+      "norm_label": "header()"
+    },
+    {
+      "label": "NavItem()",
+      "file_type": "code",
+      "source_file": "src/components/Header.jsx",
+      "source_location": "L119",
+      "id": "components_header_navitem",
+      "community": 4,
+      "norm_label": "navitem()"
+    },
+    {
+      "label": "Divider()",
+      "file_type": "code",
+      "source_file": "src/components/Header.jsx",
+      "source_location": "L164",
+      "id": "components_header_divider",
+      "community": 4,
+      "norm_label": "divider()"
+    },
+    {
+      "label": "QuoteText()",
+      "file_type": "code",
+      "source_file": "src/components/Header.jsx",
+      "source_location": "L176",
+      "id": "components_header_quotetext",
+      "community": 4,
+      "norm_label": "quotetext()"
+    },
+    {
+      "label": "HoloCardMaterial.js",
+      "file_type": "code",
+      "source_file": "src/components/HoloCardMaterial.js",
+      "source_location": "L1",
+      "id": "components_holocardmaterial",
+      "community": 7,
+      "norm_label": "holocardmaterial.js"
+    },
+    {
+      "label": "HoloCardMaterial",
+      "file_type": "code",
+      "source_file": "src/components/HoloCardMaterial.js",
+      "source_location": "L8",
+      "id": "components_holocardmaterial_holocardmaterial",
+      "community": 7,
+      "norm_label": "holocardmaterial"
+    },
+    {
+      "label": "MiniMap.jsx",
+      "file_type": "code",
+      "source_file": "src/components/MiniMap.jsx",
+      "source_location": "L1",
+      "id": "components_minimap",
+      "community": 8,
+      "norm_label": "minimap.jsx"
+    },
+    {
+      "label": "MiniMap()",
+      "file_type": "code",
+      "source_file": "src/components/MiniMap.jsx",
+      "source_location": "L3",
+      "id": "components_minimap_minimap",
+      "community": 8,
+      "norm_label": "minimap()"
+    },
+    {
+      "label": "TopologyBackground.jsx",
+      "file_type": "code",
+      "source_file": "src/components/TopologyBackground.jsx",
+      "source_location": "L1",
+      "id": "components_topologybackground",
+      "community": 0,
+      "norm_label": "topologybackground.jsx"
+    },
+    {
+      "label": "TopographyMaterial",
+      "file_type": "code",
+      "source_file": "src/components/TopologyBackground.jsx",
+      "source_location": "L10",
+      "id": "components_topologybackground_topographymaterial",
+      "community": 0,
+      "norm_label": "topographymaterial"
+    },
+    {
+      "label": "TopologyBackground()",
+      "file_type": "code",
+      "source_file": "src/components/TopologyBackground.jsx",
+      "source_location": "L26",
+      "id": "components_topologybackground_topologybackground",
+      "community": 0,
+      "norm_label": "topologybackground()"
+    },
+    {
+      "label": "GridCanvas.jsx",
+      "file_type": "code",
+      "source_file": "src/components/grid/GridCanvas.jsx",
+      "source_location": "L1",
+      "id": "grid_gridcanvas",
+      "community": 0,
+      "norm_label": "gridcanvas.jsx"
+    },
+    {
+      "label": "GridCanvas()",
+      "file_type": "code",
+      "source_file": "src/components/grid/GridCanvas.jsx",
+      "source_location": "L9",
+      "id": "grid_gridcanvas_gridcanvas",
+      "community": 0,
+      "norm_label": "gridcanvas()"
+    },
+    {
+      "label": "Rig.jsx",
+      "file_type": "code",
+      "source_file": "src/components/grid/Rig.jsx",
+      "source_location": "L1",
+      "id": "grid_rig",
+      "community": 1,
+      "norm_label": "rig.jsx"
+    },
+    {
+      "label": "Rig()",
+      "file_type": "code",
+      "source_file": "src/components/grid/Rig.jsx",
+      "source_location": "L10",
+      "id": "grid_rig_rig",
+      "community": 1,
+      "norm_label": "rig()"
+    },
+    {
+      "label": "ShoeGrid.jsx",
+      "file_type": "code",
+      "source_file": "src/components/grid/ShoeGrid.jsx",
+      "source_location": "L1",
+      "id": "grid_shoegrid",
+      "community": 0,
+      "norm_label": "shoegrid.jsx"
+    },
+    {
+      "label": "ShoeGrid()",
+      "file_type": "code",
+      "source_file": "src/components/grid/ShoeGrid.jsx",
+      "source_location": "L31",
+      "id": "grid_shoegrid_shoegrid",
+      "community": 0,
+      "norm_label": "shoegrid()"
+    },
+    {
+      "label": "ShoeTile.jsx",
+      "file_type": "code",
+      "source_file": "src/components/grid/ShoeTile.jsx",
+      "source_location": "L1",
+      "id": "grid_shoetile",
+      "community": 1,
+      "norm_label": "shoetile.jsx"
+    },
+    {
+      "label": "ShoeTile()",
+      "file_type": "code",
+      "source_file": "src/components/grid/ShoeTile.jsx",
+      "source_location": "L16",
+      "id": "grid_shoetile_shoetile",
+      "community": 1,
+      "norm_label": "shoetile()"
+    },
+    {
+      "label": "gridConfig.js",
+      "file_type": "code",
+      "source_file": "src/components/grid/gridConfig.js",
+      "source_location": "L1",
+      "id": "grid_gridconfig",
+      "community": 1,
+      "norm_label": "gridconfig.js"
+    },
+    {
+      "label": "DEFAULT_CONFIG",
+      "file_type": "code",
+      "source_file": "src/components/grid/gridConfig.js",
+      "source_location": "L3",
+      "id": "grid_gridconfig_default_config",
+      "community": 1,
+      "norm_label": "default_config"
+    },
+    {
+      "label": "CONFIG",
+      "file_type": "code",
+      "source_file": "src/components/grid/gridConfig.js",
+      "source_location": "L65",
+      "id": "grid_gridconfig_config",
+      "community": 1,
+      "norm_label": "config"
+    },
+    {
+      "label": "gridState.js",
+      "file_type": "code",
+      "source_file": "src/components/grid/gridState.js",
+      "source_location": "L1",
+      "id": "grid_gridstate",
+      "community": 0,
+      "norm_label": "gridstate.js"
+    },
+    {
+      "label": "rigState",
+      "file_type": "code",
+      "source_file": "src/components/grid/gridState.js",
+      "source_location": "L5",
+      "id": "grid_gridstate_rigstate",
+      "community": 1,
+      "norm_label": "rigstate"
+    },
+    {
+      "label": "calculateGridDimensions()",
+      "file_type": "code",
+      "source_file": "src/components/grid/gridState.js",
+      "source_location": "L15",
+      "id": "grid_gridstate_calculategriddimensions",
+      "community": 0,
+      "norm_label": "calculategriddimensions()"
+    },
+    {
+      "label": "EMPTY_COLORS",
+      "file_type": "code",
+      "source_file": "src/components/grid/gridState.js",
+      "source_location": "L25",
+      "id": "grid_gridstate_empty_colors",
+      "community": 0,
+      "norm_label": "empty_colors"
+    },
+    {
+      "label": "matchesFilter()",
+      "file_type": "code",
+      "source_file": "src/components/grid/gridState.js",
+      "source_location": "L28",
+      "id": "grid_gridstate_matchesfilter",
+      "community": 0,
+      "norm_label": "matchesfilter()"
+    },
+    {
+      "label": "useGridConfig.js",
+      "file_type": "code",
+      "source_file": "src/components/grid/useGridConfig.js",
+      "source_location": "L1",
+      "id": "grid_usegridconfig",
+      "community": 1,
+      "norm_label": "usegridconfig.js"
+    },
+    {
+      "label": "useGridConfig()",
+      "file_type": "code",
+      "source_file": "src/components/grid/useGridConfig.js",
+      "source_location": "L6",
+      "id": "grid_usegridconfig_usegridconfig",
+      "community": 0,
+      "norm_label": "usegridconfig()"
+    },
+    {
+      "label": "_app.js",
+      "file_type": "code",
+      "source_file": "src/pages/_app.js",
+      "source_location": "L1",
+      "id": "pages_app",
+      "community": 5,
+      "norm_label": "_app.js"
+    },
+    {
+      "label": "inter",
+      "file_type": "code",
+      "source_file": "src/pages/_app.js",
+      "source_location": "L4",
+      "id": "pages_app_inter",
+      "community": 5,
+      "norm_label": "inter"
+    },
+    {
+      "label": "App()",
+      "file_type": "code",
+      "source_file": "src/pages/_app.js",
+      "source_location": "L6",
+      "id": "pages_app_app",
+      "community": 5,
+      "norm_label": "app()"
+    },
+    {
+      "label": "_document.js",
+      "file_type": "code",
+      "source_file": "src/pages/_document.js",
+      "source_location": "L1",
+      "id": "pages_document",
+      "community": 11,
+      "norm_label": "_document.js"
+    },
+    {
+      "label": "Document()",
+      "file_type": "code",
+      "source_file": "src/pages/_document.js",
+      "source_location": "L3",
+      "id": "pages_document_document",
+      "community": 11,
+      "norm_label": "document()"
+    },
+    {
+      "label": "index.js",
+      "file_type": "code",
+      "source_file": "src/pages/index.js",
+      "source_location": "L1",
+      "id": "pages_index",
+      "community": 6,
+      "norm_label": "index.js"
+    },
+    {
+      "label": "ShoeGrid",
+      "file_type": "code",
+      "source_file": "src/pages/index.js",
+      "source_location": "L5",
+      "id": "pages_index_shoegrid",
+      "community": 6,
+      "norm_label": "shoegrid"
+    },
+    {
+      "label": "HomePage()",
+      "file_type": "code",
+      "source_file": "src/pages/index.js",
+      "source_location": "L9",
+      "id": "pages_index_homepage",
+      "community": 6,
+      "norm_label": "homepage()"
+    },
+    {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "id": "readme",
+      "community": 3,
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "Shoe Finder",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "id": "readme_shoe_finder",
+      "community": 3,
+      "norm_label": "shoe finder"
+    },
+    {
+      "label": "Stack",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L5",
+      "id": "readme_stack",
+      "community": 3,
+      "norm_label": "stack"
+    },
+    {
+      "label": "Getting Started",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L14",
+      "id": "readme_getting_started",
+      "community": 3,
+      "norm_label": "getting started"
+    },
+    {
+      "label": "Scripts",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L23",
+      "id": "readme_scripts",
+      "community": 3,
+      "norm_label": "scripts"
+    },
+    {
+      "label": "Project Structure",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L32",
+      "id": "readme_project_structure",
+      "community": 3,
+      "norm_label": "project structure"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "eslint.config.mjs",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "eslint_config",
+      "target": "eslint_config_eslintconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "next.config.mjs",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "next_config",
+      "target": "next_config_nextconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "postcss.config.mjs",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "postcss_config",
+      "target": "postcss_config_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/CloseButton.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "components_closebutton",
+      "target": "components_closebutton_closebutton",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/grid/ShoeTile.jsx",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "grid_shoetile",
+      "target": "components_closebutton",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/grid/ShoeTile.jsx",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "grid_shoetile",
+      "target": "components_closebutton_closebutton",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/GridUI.jsx",
+      "source_location": "L409",
+      "weight": 1.0,
+      "source": "components_gridui",
+      "target": "components_gridui_controlbutton",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/GridUI.jsx",
+      "source_location": "L513",
+      "weight": 1.0,
+      "source": "components_gridui",
+      "target": "components_gridui_filterchip",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/GridUI.jsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "components_gridui",
+      "target": "components_gridui_islandtransition",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/GridUI.jsx",
+      "source_location": "L469",
+      "weight": 1.0,
+      "source": "components_gridui",
+      "target": "components_gridui_tabbutton",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/GridUI.jsx",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "components_gridui",
+      "target": "components_gridui_unifiedcontrolbar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/GridUI.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "components_gridui",
+      "target": "grid_gridconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/GridUI.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "components_gridui",
+      "target": "grid_gridconfig_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/GridUI.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "components_gridui",
+      "target": "grid_gridstate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/GridUI.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "components_gridui",
+      "target": "grid_gridstate_rigstate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/grid/ShoeGrid.jsx",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "grid_shoegrid",
+      "target": "components_gridui",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/grid/ShoeGrid.jsx",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "grid_shoegrid",
+      "target": "components_gridui_unifiedcontrolbar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Header.jsx",
+      "source_location": "L164",
+      "weight": 1.0,
+      "source": "components_header",
+      "target": "components_header_divider",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Header.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "components_header",
+      "target": "components_header_header",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Header.jsx",
+      "source_location": "L119",
+      "weight": 1.0,
+      "source": "components_header",
+      "target": "components_header_navitem",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Header.jsx",
+      "source_location": "L176",
+      "weight": 1.0,
+      "source": "components_header",
+      "target": "components_header_quotetext",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/grid/ShoeGrid.jsx",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "grid_shoegrid",
+      "target": "components_header",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/HoloCardMaterial.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "components_holocardmaterial",
+      "target": "components_holocardmaterial_holocardmaterial",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/grid/ShoeGrid.jsx",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "grid_shoegrid",
+      "target": "components_holocardmaterial",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/MiniMap.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "components_minimap",
+      "target": "components_minimap_minimap",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/grid/ShoeGrid.jsx",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "grid_shoegrid",
+      "target": "components_minimap",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/TopologyBackground.jsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "components_topologybackground",
+      "target": "components_topologybackground_topographymaterial",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/TopologyBackground.jsx",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "components_topologybackground",
+      "target": "components_topologybackground_topologybackground",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/grid/ShoeGrid.jsx",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "grid_shoegrid",
+      "target": "components_topologybackground",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/grid/ShoeGrid.jsx",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "grid_shoegrid",
+      "target": "components_topologybackground_topologybackground",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/grid/GridCanvas.jsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "grid_gridcanvas",
+      "target": "grid_gridcanvas_gridcanvas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/grid/GridCanvas.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "grid_gridcanvas",
+      "target": "grid_gridconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/grid/GridCanvas.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "grid_gridcanvas",
+      "target": "grid_gridconfig_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/grid/GridCanvas.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "grid_gridcanvas",
+      "target": "grid_gridstate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/grid/GridCanvas.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "grid_gridcanvas",
+      "target": "grid_gridstate_calculategriddimensions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/grid/GridCanvas.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "grid_gridcanvas",
+      "target": "grid_gridstate_empty_colors",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/grid/GridCanvas.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "grid_gridcanvas",
+      "target": "grid_gridstate_matchesfilter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/grid/GridCanvas.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "grid_gridcanvas",
+      "target": "grid_shoetile",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/grid/GridCanvas.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "grid_gridcanvas",
+      "target": "grid_shoetile_shoetile",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/grid/ShoeGrid.jsx",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "grid_shoegrid",
+      "target": "grid_gridcanvas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/grid/ShoeGrid.jsx",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "grid_shoegrid",
+      "target": "grid_gridcanvas_gridcanvas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/grid/Rig.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "grid_rig",
+      "target": "grid_gridconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/grid/Rig.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "grid_rig",
+      "target": "grid_gridconfig_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/grid/Rig.jsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "grid_rig",
+      "target": "grid_gridstate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/grid/Rig.jsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "grid_rig",
+      "target": "grid_gridstate_rigstate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/grid/Rig.jsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "grid_rig",
+      "target": "grid_rig_rig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/grid/ShoeGrid.jsx",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "grid_shoegrid",
+      "target": "grid_rig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/grid/ShoeGrid.jsx",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "grid_shoegrid",
+      "target": "grid_rig_rig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/grid/ShoeGrid.jsx",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "grid_shoegrid",
+      "target": "grid_gridconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/grid/ShoeGrid.jsx",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "grid_shoegrid",
+      "target": "grid_gridconfig_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/grid/ShoeGrid.jsx",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "grid_shoegrid",
+      "target": "grid_gridconfig_default_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/grid/ShoeGrid.jsx",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "grid_shoegrid",
+      "target": "grid_gridstate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/grid/ShoeGrid.jsx",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "grid_shoegrid",
+      "target": "grid_gridstate_calculategriddimensions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/grid/ShoeGrid.jsx",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "grid_shoegrid",
+      "target": "grid_gridstate_empty_colors",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/grid/ShoeGrid.jsx",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "grid_shoegrid",
+      "target": "grid_gridstate_matchesfilter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/grid/ShoeGrid.jsx",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "grid_shoegrid",
+      "target": "grid_gridstate_rigstate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/grid/ShoeGrid.jsx",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "grid_shoegrid",
+      "target": "grid_shoegrid_shoegrid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/grid/ShoeGrid.jsx",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "grid_shoegrid",
+      "target": "grid_usegridconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/grid/ShoeGrid.jsx",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "grid_shoegrid",
+      "target": "grid_usegridconfig_usegridconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/grid/ShoeGrid.jsx",
+      "source_location": "L178",
+      "weight": 1.0,
+      "source": "grid_shoegrid_shoegrid",
+      "target": "grid_gridstate_calculategriddimensions"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/grid/ShoeGrid.jsx",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "grid_shoegrid_shoegrid",
+      "target": "grid_usegridconfig_usegridconfig"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/grid/ShoeTile.jsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "grid_shoetile",
+      "target": "grid_gridconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/grid/ShoeTile.jsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "grid_shoetile",
+      "target": "grid_gridconfig_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/grid/ShoeTile.jsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "grid_shoetile",
+      "target": "grid_gridstate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/grid/ShoeTile.jsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "grid_shoetile",
+      "target": "grid_gridstate_rigstate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/grid/ShoeTile.jsx",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "grid_shoetile",
+      "target": "grid_shoetile_shoetile",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/grid/gridConfig.js",
+      "source_location": "L65",
+      "weight": 1.0,
+      "source": "grid_gridconfig",
+      "target": "grid_gridconfig_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/grid/gridConfig.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "grid_gridconfig",
+      "target": "grid_gridconfig_default_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/grid/gridState.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "grid_gridstate",
+      "target": "grid_gridconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/grid/useGridConfig.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "grid_usegridconfig",
+      "target": "grid_gridconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/grid/useGridConfig.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "grid_usegridconfig",
+      "target": "grid_gridconfig_default_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/grid/gridState.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "grid_gridstate",
+      "target": "grid_gridconfig_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/grid/useGridConfig.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "grid_usegridconfig",
+      "target": "grid_gridconfig_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/grid/gridState.js",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "grid_gridstate",
+      "target": "grid_gridstate_calculategriddimensions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/grid/gridState.js",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "grid_gridstate",
+      "target": "grid_gridstate_empty_colors",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/grid/gridState.js",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "grid_gridstate",
+      "target": "grid_gridstate_matchesfilter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/grid/gridState.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "grid_gridstate",
+      "target": "grid_gridstate_rigstate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/grid/useGridConfig.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "grid_usegridconfig",
+      "target": "grid_usegridconfig_usegridconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/_app.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "pages_app",
+      "target": "pages_app_app",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/_app.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "pages_app",
+      "target": "pages_app_inter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/_document.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "pages_document",
+      "target": "pages_document_document",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/index.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "pages_index",
+      "target": "pages_index_homepage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/index.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "pages_index",
+      "target": "pages_index_shoegrid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "readme",
+      "target": "readme_shoe_finder",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "readme_shoe_finder",
+      "target": "readme_getting_started",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "readme_shoe_finder",
+      "target": "readme_project_structure",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "readme_shoe_finder",
+      "target": "readme_scripts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "readme_shoe_finder",
+      "target": "readme_stack",
+      "confidence_score": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "built_at_commit": "6549c4082e44d7c767d7f53f37e6d8cbe0853566"
+}

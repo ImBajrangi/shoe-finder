@@ -1,0 +1,102 @@
+{
+  "/Users/sakhi/Code/shoe-finder/eslint.config.mjs": {
+    "mtime": 1776507289.6996477,
+    "ast_hash": "bcb00e240634dd9448e57386fdff1902",
+    "semantic_hash": ""
+  },
+  "/Users/sakhi/Code/shoe-finder/next.config.mjs": {
+    "mtime": 1776507289.6999018,
+    "ast_hash": "dd63fbb989df13ff31ec9426cbc9e8ad",
+    "semantic_hash": ""
+  },
+  "/Users/sakhi/Code/shoe-finder/postcss.config.mjs": {
+    "mtime": 1776507289.7012436,
+    "ast_hash": "239f3ebf717465dc636818a1a619398d",
+    "semantic_hash": ""
+  },
+  "/Users/sakhi/Code/shoe-finder/src/components/CloseButton.jsx": {
+    "mtime": 1776507289.726054,
+    "ast_hash": "11486fefad7333ccc2aac8ba7b7c3ad9",
+    "semantic_hash": ""
+  },
+  "/Users/sakhi/Code/shoe-finder/src/components/GridUI.jsx": {
+    "mtime": 1776509356.59283,
+    "ast_hash": "a4599708594a25097256c9148f2a2674",
+    "semantic_hash": ""
+  },
+  "/Users/sakhi/Code/shoe-finder/src/components/Header.jsx": {
+    "mtime": 1776507833.8534372,
+    "ast_hash": "1517f91c4f7697dcad472dabca19131b",
+    "semantic_hash": ""
+  },
+  "/Users/sakhi/Code/shoe-finder/src/components/HoloCardMaterial.js": {
+    "mtime": 1776507289.7265115,
+    "ast_hash": "5d44d9bd7335e070b25f0e37a2a09994",
+    "semantic_hash": ""
+  },
+  "/Users/sakhi/Code/shoe-finder/src/components/MiniMap.jsx": {
+    "mtime": 1776507289.7266653,
+    "ast_hash": "98738dcf1bf659e3cd3e5df1c20886ed",
+    "semantic_hash": ""
+  },
+  "/Users/sakhi/Code/shoe-finder/src/components/TopologyBackground.jsx": {
+    "mtime": 1776507289.726779,
+    "ast_hash": "d9c96135832656b255f53b30929c4f9f",
+    "semantic_hash": ""
+  },
+  "/Users/sakhi/Code/shoe-finder/src/components/grid/GridCanvas.jsx": {
+    "mtime": 1776507289.7270355,
+    "ast_hash": "a0394e9b927517bd1128997261775599",
+    "semantic_hash": ""
+  },
+  "/Users/sakhi/Code/shoe-finder/src/components/grid/Rig.jsx": {
+    "mtime": 1776507289.7271636,
+    "ast_hash": "0bdba8d410e41d7c9cbbfd7318338c82",
+    "semantic_hash": ""
+  },
+  "/Users/sakhi/Code/shoe-finder/src/components/grid/ShoeGrid.jsx": {
+    "mtime": 1776508013.3494277,
+    "ast_hash": "d98b1099d7f80cce90a20e3dc856b3fa",
+    "semantic_hash": ""
+  },
+  "/Users/sakhi/Code/shoe-finder/src/components/grid/ShoeTile.jsx": {
+    "mtime": 1776507289.7276819,
+    "ast_hash": "28ceae04419df2d3875a30e2abae1f36",
+    "semantic_hash": ""
+  },
+  "/Users/sakhi/Code/shoe-finder/src/components/grid/gridConfig.js": {
+    "mtime": 1776507289.727817,
+    "ast_hash": "78a776e1222754c4e99a4bbfb38c53f3",
+    "semantic_hash": ""
+  },
+  "/Users/sakhi/Code/shoe-finder/src/components/grid/gridState.js": {
+    "mtime": 1776507289.7279258,
+    "ast_hash": "8bdfdd040677a8aa101acf62292ab389",
+    "semantic_hash": ""
+  },
+  "/Users/sakhi/Code/shoe-finder/src/components/grid/useGridConfig.js": {
+    "mtime": 1776507289.7280738,
+    "ast_hash": "85197703809114cb1e990bd74918d244",
+    "semantic_hash": ""
+  },
+  "/Users/sakhi/Code/shoe-finder/src/pages/_app.js": {
+    "mtime": 1776507289.7282598,
+    "ast_hash": "f47fe114c88dc558e164695b58ea0776",
+    "semantic_hash": ""
+  },
+  "/Users/sakhi/Code/shoe-finder/src/pages/_document.js": {
+    "mtime": 1776507289.7283835,
+    "ast_hash": "4d91274fa1c7f4c75cc39d2b61adb85b",
+    "semantic_hash": ""
+  },
+  "/Users/sakhi/Code/shoe-finder/src/pages/index.js": {
+    "mtime": 1776507845.7700098,
+    "ast_hash": "7f83952aa32146fe0620e693191660da",
+    "semantic_hash": ""
+  },
+  "/Users/sakhi/Code/shoe-finder/README.md": {
+    "mtime": 1776507289.6988416,
+    "ast_hash": "863b506fb5629895de154fc4eb91f906",
+    "semantic_hash": ""
+  }
+}
